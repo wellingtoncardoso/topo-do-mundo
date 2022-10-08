@@ -1,0 +1,40 @@
+/*
+Theme Name: Com Ponto Web
+Text Domain: wp-cpw
+Version: 1.0
+Tested up to: 5.9
+Requires at least: 4.7
+Requires PHP: 7.4
+Description: This theme is for a restaurant in the city of BH
+Author: Cardoso Wellington
+Author URI: https://compontoweb.com.br
+Theme URI: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+/**
+  -> SETTINGS
+  * 1 Fonts.....................
+
+  -> GENERIC
+  * 1 Normalize.css..............Normalize browser defaults.
+  * 2 Reset......................Redefining specific elements to be used in the theme
+
+  -> COMPONENTS
+  * 1 Header.....................styles 
+  * 2 Footer.....................styles
+
+  -> BLOCKS
+  * 1 Container..................
+
+  -> UTILITIES
+  * 1 Color Palette..............Class for the global color palettes
+**/

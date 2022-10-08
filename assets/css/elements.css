@@ -1,0 +1,13 @@
+/* medias */
+.cpw-content-area .cpw-site-main #cpw-hero div{
+  width: 100vw;
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media(max-width: 991px){
+  .cpw-content-area .cpw-site-main #cpw-hero div{
+    background-position: right;
+  }
+}

@@ -1,0 +1,34 @@
+/* Containers */
+.cpw-container{  
+  --padding-light: 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media(max-width: 575px){
+  .cpw-container{
+    padding: var(--padding-light);
+  }
+}
+@media(min-width: 576px){
+  .cpw-container{
+    max-width: 540px;
+    padding-right: var(--padding-light);
+    padding-left: var(--padding-light);
+  }
+}
+@media(min-width> 768px){
+  .cpw-container{
+    max-width: 720px;
+  }
+}
+@media(min-width: 992px){
+  .cpw-container{
+    max-width: 960px
+  }
+}
+@media(min-width: 1200px){
+  .cpw-container{
+    max-width: 1140px;
+  }
+}
