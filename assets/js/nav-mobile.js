@@ -34,7 +34,7 @@ class WpCpwNavMobile{
   }
 }
 
-const wpCpwNavMobile = new WpCpwNavMobile(
+export const wpCpwNavMobile = new WpCpwNavMobile(
   ".cpw-nav-mobile",
   ".cpw-main-menu ul",
   ".cpw-main-menu ul li",

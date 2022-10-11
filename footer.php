@@ -5,3 +5,8 @@
     </div>
   </body>
 </html>
+
+<!-- modal search -->
+<!-- <div class="cpw-modal-searchbox">
+  <input type="search" class="search" placeholder="Search">
+</div> -->

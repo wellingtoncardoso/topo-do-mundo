@@ -1,0 +1,147 @@
+/* title tags and tagine */
+.cpw-content h2{
+  font-size: var(--global--font-size-xl);
+  margin-bottom: var(--global--margin-bottom);
+  color: var(--global--color-secondary);
+  font-weight: 300;
+}
+.cpw-content p{
+  font-family: var(--global--font-secondary);
+  font-size: var(--global--font-size-sm);
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* about home */
+#cpw-about-home{
+  background-color: #F5F1EA;
+}
+#cpw-about-home .cpw-grid-2 .cpw-content,
+#cpw-about-home .cpw-grid-2 .cpw-reservation{
+  padding: var(--global--padding-card);
+}
+#cpw-about-home .cpw-button{
+  border: 1px solid var(--global--color-secondary);
+}
+#cpw-about-home .cpw-button:hover{
+  text-decoration: none;
+  background-color: var(--global--color-secondary);
+  color: var(--global--color-details);
+}
+#cpw-about-home .cpw-form{
+  background-color: var(--global--color-secondary);
+  padding: var(--global--padding-card);
+}
+#cpw-about-home .cpw-form h3{
+  font-size: var(--global--font-size-lg);
+  color: var(--global--color-details);
+  font-weight: 300;
+  margin-bottom: var(--global--margin-bottom);
+}
+/* other servies home*/
+#cpw-other-services-home{
+  background-color: var(--global--color-details);
+}
+#cpw-other-services-home  h2{
+  text-align: center;
+}
+#cpw-other-services-home .cpw-card{
+  width: 100%;
+  max-width: 280px;
+  padding: var(--global--padding-card);
+  background-color: var(--global--color-details);
+  border: 1px solid var(--global--color-secondary);
+  border-radius: 8px;
+  margin-top: var(--global--margin-top);
+  text-align: center;
+  transition: .3s ease;
+}
+#cpw-other-services-home .cpw-card:hover{
+  cursor: pointer;
+  background-color: var(--global--color-secondary);
+  color: var(--global--color-details);
+}
+#cpw-other-services-home .cpw-card:hover h3,
+#cpw-other-services-home .cpw-card:hover p{
+  color: var(--global--color-details);
+}
+#cpw-other-services-home .cpw-card h3{
+  font-size: var(--global--font-size-lg);
+  font-weight: 300;
+  color: var(--global--color-primary);
+  margin-bottom: .8rem;
+}
+#cpw-other-services-home .cpw-card p{
+  font-size: var(--global--font-size-md);
+  line-height: 22px;
+  color: var(--global--color-secondary);
+}
+#cpw-other-services-home .cpw-card i{
+  width: 80px;
+  height: 80px;
+  font-size: var(--global--font-size-xl);
+  background-color:coral;
+  color: var(--global--color-details);
+  border-radius: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto .9rem;
+}
+
+#cpw-other-services-home .cpw-card-more-suggest{
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#cpw-other-services-home .cpw-card-more-suggest figure{
+  width: 100%;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--global--color-primary);
+}
+#cpw-other-services-home .cpw-card-more-suggest figure img{
+  width: 100%;
+  opacity: .7;
+  transition: all .3s ease-in-out;
+}
+#cpw-other-services-home .cpw-card-more-suggest:hover figure img{
+  transform: scale(1.05);
+  opacity: 1;
+}
+#cpw-other-services-home .cpw-card-more-suggest .cpw-content{
+  background-color: var(--global--color-details);
+  padding: var(--global--padding-card);
+  width: 80%;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#cpw-other-services-home .cpw-card-more-suggest:hover .cpw-content{
+  max-height: 320px;
+  height: auto;
+}
+#cpw-other-services-home .cpw-card-more-suggest .cpw-content h4{
+  color: var(--global--color-secondary);
+  font-size: var(--global--font-size-lg);
+  font-weight: 300;
+  margin-bottom: .8rem;
+}
+#cpw-other-services-home .cpw-card-more-suggest .cpw-content p{
+  font-size: var(--global--font-size-md);
+  font-weight: 300;
+}
+#cpw-other-services-home .cpw-card-more-suggest .cpw-content p span{
+  color: var(--global--color-secondary);
+  font-weight: 400;
+  font-family: var(--global--font-secondary);
+  display: flex;
+  justify-content: right;
+}

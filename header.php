@@ -11,7 +11,7 @@
       <section class="cpw-sidebar">
        <div class="cpw-container">
           <div class="cpw-logo">
-            <img src="<?php echo get_template_directory_uri('')?>/assets/images/topo-do-mundo-logo-yellow.png" alt="">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri('')?>/assets/images/topo-do-mundo-logo-orange.png" alt="Logo Restaurante Topo do Mundo"></a>
           </div>
           <nav class="cpw-main-menu">
             <div class="cpw-nav-mobile">
@@ -28,7 +28,7 @@
             </ul>
           </nav>
           <div class="cpw-searchbox">
-            <input type="search" class="search" placeholder="Search">
+            <span><i class="fa fa-search"></i></span>
           </div>
        </div>
       </section>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,200;0,400;0,700;1,300&family=Roboto:wght@200,300;400;500;700&display=swap');
 /* Variables */
 :root{
   /* Colors */
@@ -9,6 +9,7 @@
   /* margins and paddings */
   --global--margin-top: 64px;
   --global--margin-bottom: 32px;
+  --global--padding: 64px;
   --global--padding-card: 16px;
   --global--padding-card-sub: 8px;
 
@@ -27,4 +28,10 @@
 	--global--font-size-xxxl: 5rem;
 	--global--font-size-page-title: var(--global--font-size-xxl);
 	--global--letter-spacing: normal;
+
+  /* buttons */
+  --global--button-font-size: var(--global--font-size-sm);
+  --global--button-color: var(--global--color-secondary);
+  --global--button-padding: .5rem 1rem;
+  
 }

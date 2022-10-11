@@ -13,7 +13,6 @@
  html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-family: var(--global--font-primary) !important;
   background-color: var(--global--color-primary);
 }
 
@@ -27,6 +26,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: var(--global--font-primary) !important;
 }
 
 /**
