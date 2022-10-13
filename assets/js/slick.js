@@ -1,4 +1,4 @@
-// alert('Test slick')
+
 $( '.cpw-slick-slide' ).slick({
   dots: true,
   arrows: false,
@@ -10,4 +10,16 @@ $( '.cpw-slick-slide' ).slick({
   autoplaySpeed: 3000,
   fade: true,
   cssEase: 'linear',
+})
+
+$('.cpw-slick-testimonial').slick({
+  dots: false,
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  inifinte: false,
+  speed: 3000,
+  autoplay: false,
+  centerMode: true,
+  centerPadding: '60px',
 })

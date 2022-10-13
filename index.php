@@ -91,7 +91,152 @@
             </div>
           </section>
           <!-- end other services -->
-          
+          <section id="cpw-our-starters" class="cpw-padding">
+            <div class="cpw-container">
+              <div class="cpw-content">
+                <h2><?php echo esc_html__( 'Our Starters', 'wp-cpw' ); ?></h2>
+              </div>
+              <div class="cpw-flex-columns">
+                <div>
+                  <img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/side-image01.png" alt="">
+                </div>
+                <div class="cpw-card-owr-starters">
+                  <h3><?php echo esc_html__( 'Appetizers', "wp-cpw" ); ?></h3>
+                  <div class="cpw-itens-menu-our-starters">
+                  <?php for( $i=0; $i<5; $i++ ) {?> 
+                    <div class="cpw-info">
+                      <div>
+                        <p>Four Chease Garlic Bread</p>
+                        <small>Toested french bread topped with romano</small>
+                      </div>
+                      <div>
+                        <p><span>R$32,00</span></p>
+                      </div>
+                    </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+              <div class="cpw-flex-columns">
+                <div>
+                  <img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/side-image02.png" alt="">
+                </div>
+                <div class="cpw-card-owr-starters">
+                  <h3><?php echo esc_html__( 'Appetizers', "wp-cpw" ); ?></h3>
+                  <div class="cpw-itens-menu-our-starters">
+                  <?php for( $i=0; $i<5; $i++ ) {?> 
+                    <div class="cpw-info">
+                      <div>
+                        <p>Four Chease Garlic Bread</p>
+                        <small>Toested french bread topped with romano</small>
+                      </div>
+                      <div>
+                        <p><span>R$32,00</span></p>
+                      </div>
+                    </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end our starters -->
+          <section id="cpw-cards-four" class="cpw-background-default cpw-padding"
+                  style="background-image: url('<?php echo get_template_directory_uri('')?>/assets/images/delete/section-bg01.jpg')">
+            <div class="cpw-container">
+              <div class="cpw-flex-columns">
+                <?php for( $i=0; $i<4; $i++ ) {?>
+                <div class="cpw-card">
+                  <figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/icon01.png" alt=""></figure>
+                  <div class="cpw-details">
+                    <h3><?php echo esc_html__( 'Restaurant', 'wp-cpw' ); ?></h3>
+                    <p><?php echo esc_html__( 'This section contains your estimated account balance from the legacy platform.', 'wp-cpw' );?></p>
+                  </div>
+                </div>
+                <?php } ?>
+              </div>
+            </div>
+          </section>
+          <!-- end cards four -->
+          <section id="cpw-gallery" class="cpw-padding">
+            <div class="cpw-container">
+              <div class="cpw-content">
+                <h2><?php echo esc_html__( 'Our Gallery', 'wp-cpw' ); ?></h2>
+              </div>
+              <div class="cpw-gallery">
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></figure>
+              </div>
+            </div>
+          </section>
+          <!-- end gallery -->
+          <section id="cpw-content-chef" class="cpw-background-default cpw-bakground-parallax cpw-padding"
+            style="background-image: url('<?php echo get_template_directory_uri('')?>/assets/images/delete/section-bg04.jpg')">
+            <div class="cpw-container">
+              <div class="cpw-flex-columns">
+                <div class="cpw-content">
+                  <h2><?php echo esc_html__( 'Our Marterchef', 'wp-cpw' ); ?></h2>
+                  <h3><?php echo esc_html__( 'The Steakhouse Bar & Restaurant', 'wp-cpw' ); ?></h3>
+                  <p><?php echo esc_html__( 'Hector was born and raised in Colombia. From childhood, thanks to his mother, he developed an interest in cooking. Following the call of his heart and love for haute cuisine, Hector received an honors degree at the Culinary Academy in Bogota.', 'wp-cpw' ); ?></p>
+                </div>
+                <div>
+                  <figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/head-chef.png" alt=""></figure>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- end content chef -->
+          <section id="cpw-testimonial" class="cpw-background-default cpw-padding"
+            style="background-image: url('<?php echo get_template_directory_uri('')?>/assets/images/delete/section-bg03.jpg')">
+            <div class="cpw-container cpw-padding">
+              <div class="cpw-slick-testimonial">
+                <?php for($i=0; $i<2; $i++) {?>
+                  <div class="cpw-testimonial">
+                    <div class="cpw-content">
+                      <p>
+                        <i class="fa fa-quote-left"></i> 
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consequatur nisi nulla quidem ex voluptate at molestiae minus reiciendis perspiciatis! Mollitia excepturi dolorem facilis error voluptatum ex itaque magni quis. 
+                        <i class="fa fa-quote-right"></i>
+                      </p>
+                    </div>
+                    <div class="cpw-details">
+                      <p><span>Wellington</span></p>
+                    </div>
+                  </div>
+                <?php } ?>
+              </div>
+            </div>
+          </section>
+          <!-- end testmonial -->
+          <section id="cpw-articles" class="cpw-padding">
+            <div class="cpw-container">
+              <div class="cpw-content">
+                <h2><?php echo esc_html__( 'Recent articles', 'wp-cpw' );?></h2>
+              </div>
+              <div class="cpw-flex-columns">
+                <?php for($i=0; $i<3; $i++){?>
+                <article>
+                  <figure>
+                    <img src="<?php echo get_template_directory_uri('')?>/assets/images/placeholder-default.jpg" alt="">
+                  </figure>
+                  <div class="cpw-details">
+                    <div class="cpw-content">
+                      <h3>Expression alteration entreaties mrs can terminated estimating.</h3>
+                      <div class="cpw-info">
+                        <div class="cpw-avatar"><img src="<?php echo get_template_directory_uri('')?>/assets/images/placeholder-default.jpg" alt="Avatar author"></div>
+                        <div class="cpw-author"><p><?php echo esc_html__( 'Autor', 'wp-cpw' ); ?></p></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <?php }?>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

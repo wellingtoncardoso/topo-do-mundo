@@ -34,4 +34,6 @@
   --global--button-color: var(--global--color-secondary);
   --global--button-padding: .5rem 1rem;
   
+  /* box shadow  */
+  --global--box-shadow-light: 0 0 60px rgba(203, 120, 34, .2);
 }
