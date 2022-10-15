@@ -109,7 +109,7 @@
 #cpw-other-services-home .cpw-card-more-suggest figure img{
   width: 100%;
   opacity: .7;
-  transition: all .3s ease-in-out;
+  transition: all linear .3s ;
 }
 #cpw-other-services-home .cpw-card-more-suggest:hover figure img{
   transform: scale(1.05);
@@ -267,13 +267,13 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  transition: all .3s ease-in-out;
+  transition: all linear .3s ;
   opacity: .7;
 }
 #cpw-gallery .cpw-gallery .cpw-gallery__item img:hover{
   cursor: pointer;
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 @media(min-width: 992px){
   #cpw-gallery .cpw-gallery .cpw-gallery__item:nth-of-type(1){
@@ -409,7 +409,7 @@
   padding: var(--global--padding-card-sub);
 }
 #cpw-articles article .cpw-details .cpw-content h3{
-  font-size: var(--global--font-size-xl);
+  font-size: var(--global--font-size-md);
   font-weight: 300;
   line-height: 32px;
 }

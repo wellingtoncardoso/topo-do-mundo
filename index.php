@@ -164,12 +164,12 @@
                 <h2><?php echo esc_html__( 'Our Gallery', 'wp-cpw' ); ?></h2>
               </div>
               <div class="cpw-gallery">
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></figure>
               </div>
             </div>
           </section>
