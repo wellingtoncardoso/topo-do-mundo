@@ -6,3 +6,6 @@ import('./slick.js')
 
 // import file search
 import('./search.js')
+
+// import file gallery
+import('./gallery.js')

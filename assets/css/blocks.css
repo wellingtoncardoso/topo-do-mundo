@@ -97,3 +97,52 @@
   justify-content: center;
   gap: 15px;
 }
+
+/* behaviors */
+.cpw-modal{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .8s linear, opacity .5s linear;
+}
+.cpw-modal .cpw-modal-content{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cpw-modal .cpw-modal-content .cpw-gallery__item img{
+  width: 70vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.cpw-modal .cpw-btn-close{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: var(--global--font-size-lg);
+  color: var(--global--color-details);
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--global--color-secondary);
+  border-radius: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  opacity: .7;
+  transition: all .3s ease-in-out;
+}
+.cpw-modal .cpw-btn-close:hover{
+  cursor: pointer;
+  opacity: 1;
+  color: var(--global--color-secondary);
+  background-color: var(--global--color-details);
+}
+.cpw-modal-active{
+  visibility: visible;
+  opacity: 1;
+}

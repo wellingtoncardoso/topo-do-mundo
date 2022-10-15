@@ -6,7 +6,5 @@
   </body>
 </html>
 
-<!-- modal search -->
-<!-- <div class="cpw-modal-searchbox">
-  <input type="search" class="search" placeholder="Search">
-</div> -->
+<!-- modals -->
+<?php echo get_template_part( 'template-parts/behaviors/behavior', 'gallery' ); ?>
