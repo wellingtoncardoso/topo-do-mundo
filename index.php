@@ -84,9 +84,21 @@
               </div>
               <div class="cpw-card-more-suggest">
                 <figure><img src="<?php echo get_template_directory_uri('') ?>/assets/images/delete/menu-pack-thumb02.jpg" alt=""></figure>
+                <div class="cpw-content">
+                  <h4><?php echo esc_html__( 'Lorem ipsum dolor sit', 'wp-cpw' ); ?></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam quisquam debitis labore hic odio repellendus mollitia</p>
+                  <p><span>R$120,00</span></p>
+                </div>
               </div>
               <div class="cpw-card-more-suggest">
                 <figure><img src="<?php echo get_template_directory_uri('') ?>/assets/images/delete/menu-pack-thumb03.jpg" alt=""></figure>
+                <div class="cpw-content">
+                  <h4><?php echo esc_html__( 'Lorem ipsum dolor sit', 'wp-cpw' ); ?></h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ullam quisquam debitis labore hic odio repellendus mollitia</p>
+                  <p><span>R$120,00</span></p>
+                </div>
               </div>
             </div>
           </section>
@@ -234,6 +246,70 @@
                   </div>
                 </article>
                 <?php }?>
+              </div>
+            </div>
+          </section>
+          <!-- end articles -->
+          <section id="cpw-select-plates" class="cpw-padding">
+            <div class="cpw-container">
+              <nac class="cpw-nav-select-plates">
+                <ul>
+                  <li class="cpw-nav-select-plates__item"><a>Segunda</a></li>
+                  <li class="cpw-nav-select-plates__item"><a>Terça</a></li>
+                  <li class="cpw-nav-select-plates__item"><a>Quarta</a></li>
+                  <li class="cpw-nav-select-plates__item"><a>Quinta</a></li>
+                  <li class="cpw-nav-select-plates__item"><a>Sexta</a></li>
+                </ul>
+              </nac>
+              <div class="cpw-flex-columns cpw-block-select-plates">
+                <div><figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/tab-dishes01.png" alt=""></figure></div>
+                <div>
+                  <div class="cpw-details">
+                    <h2>Try our amazing Newyork Steak</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repellendus reprehenderit in aperiam iste, necessitatibus saepe aliquam ea, totam iure adipisci minus repellat corporis, nesciunt sunt optio facilis. Assumenda, asperiores.</p>
+                    <a href="" class="cpw-button"><?php echo esc_html__( 'Order now', 'wp-cpw' )?></a>
+                  </div>
+                </div>
+              </div>
+              <div class="cpw-flex-columns cpw-block-select-plates cpw-hide">
+                <div><figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/tab-dishes02.png" alt=""></figure></div>
+                <div>
+                  <div class="cpw-details">
+                    <h2>Try our amazing Newyork Steak</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repellendus reprehenderit in aperiam iste, necessitatibus saepe aliquam ea, totam iure adipisci minus repellat corporis, nesciunt sunt optio facilis. Assumenda, asperiores.</p>
+                    <a href="" class="cpw-button"><?php echo esc_html__( 'Order now', 'wp-cpw' )?></a>
+                  </div>
+                </div>
+              </div>
+              <div class="cpw-flex-columns cpw-block-select-plates cpw-hide">
+                <div><figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/tab-dishes03.png" alt=""></figure></div>
+                <div>
+                  <div class="cpw-details">
+                    <h2>Try our amazing Newyork Steak</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repellendus reprehenderit in aperiam iste, necessitatibus saepe aliquam ea, totam iure adipisci minus repellat corporis, nesciunt sunt optio facilis. Assumenda, asperiores.</p>
+                    <a href="" class="cpw-button"><?php echo esc_html__( 'Order now', 'wp-cpw' )?></a>
+                  </div>
+                </div>
+              </div>
+              <div class="cpw-flex-columns cpw-block-select-plates cpw-hide">
+                <div><figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/tab-dishes04.png" alt=""></figure></div>
+                <div>
+                  <div class="cpw-details">
+                    <h2>Try our amazing Newyork Steak</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repellendus reprehenderit in aperiam iste, necessitatibus saepe aliquam ea, totam iure adipisci minus repellat corporis, nesciunt sunt optio facilis. Assumenda, asperiores.</p>
+                    <a href="" class="cpw-button"><?php echo esc_html__( 'Order now', 'wp-cpw' )?></a>
+                  </div>
+                </div>
+              </div>
+              <div class="cpw-flex-columns cpw-block-select-plates cpw-hide ">
+                <div><figure><img src="<?php echo get_template_directory_uri('')?>/assets/images/delete/tab-dishes05.png" alt=""></figure></div>
+                <div>
+                  <div class="cpw-details">
+                    <h2>Try our amazing Newyork Steak</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repellendus reprehenderit in aperiam iste, necessitatibus saepe aliquam ea, totam iure adipisci minus repellat corporis, nesciunt sunt optio facilis. Assumenda, asperiores.</p>
+                    <a href="" class="cpw-button"><?php echo esc_html__( 'Order now', 'wp-cpw' )?></a>
+                  </div>
+                </div>
               </div>
             </div>
           </section>

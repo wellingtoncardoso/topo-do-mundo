@@ -5,6 +5,7 @@ header{
   position: fixed;
   width: 100%;
   /* max-width: 100%; */
+  height: 100px;
   z-index: 999999;
   background: -moz-linear-gradient(360deg, rgba(0,0,0,.4) 0%, var(--global--color-primary) 100%);
   background: -webkit-linear-gradient(360deg, rgba(0,0,0,.4) 0%, var(--global--color-primary) 100%);
@@ -22,7 +23,7 @@ header .cpw-sidebar .cpw-container{
 }
 header .cpw-sidebar .cpw-container .cpw-logo img{
   width: 100%;
-  max-width: 225px;
+  max-width: 180px;
   height: auto;
   display: block;
 }
@@ -178,4 +179,16 @@ header .cpw-sidebar .cpw-container .cpw-searchbox span i:hover{
 }
 .cpw-modal-searchbox input[type="search"]::placeholder{
   color: var(--global--color-secondary);
+}
+
+/* footer */
+.cpw-block-footer{
+  width: 100%;
+  max-width: 350px;
+}
+.cpw-block-footer p{
+  font-size: var(--global--font-size-sm);
+  color: var(--global--color-details);
+  font-weight: 300;
+  line-height: 22px;
 }
