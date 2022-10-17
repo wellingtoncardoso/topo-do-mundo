@@ -22,23 +22,23 @@ with others.
 
 /**
   -> SETTINGS
-  * 1 Fonts.....................
+  * 1 Fonts
 
   -> GENERIC
-  * 1 Normalize.css..............Normalize browser defaults.
-  * 2 Reset......................Redefining specific elements to be used in the theme
+  * 1 Normalize.css
+  * 2 Reset
 
   -> COMPONENTS
-  * 1 Header.....................styles 
-  * 2 Footer.....................styles
+  * 1 Header
+  * 2 Footer
 
   -> BLOCKS
-  * 1 Container..................
-  * 2 Section....................
-  * 3 padding....................
-  * 4 Button.....................
-  * 5 Columns....................
+  * 1 Container
+  * 2 Section
+  * 3 padding
+  * 4 Button
+  * 5 Columns
 
   -> UTILITIES
-  * 1 Color Palette..............Class for the global color palettes
+  * 1 Color Palette
 **/
