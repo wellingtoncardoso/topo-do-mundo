@@ -176,12 +176,12 @@
                 <h2><?php echo esc_html__( 'Our Gallery', 'wp-cpw' ); ?></h2>
               </div>
               <div class="cpw-gallery">
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></figure>
-                <figure class="cpw-gallery__item"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></a></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></a></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></a></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></a></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></a></figure>
+                <figure class="cpw-gallery__item"><a class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></a></figure>
               </div>
             </div>
           </section>
@@ -253,12 +253,12 @@
           <section id="cpw-select-plates" class="cpw-padding">
             <div class="cpw-container">
               <nac class="cpw-nav-select-plates">
-                <ul>
-                  <li class="cpw-nav-select-plates__item"><a>Segunda</a></li>
-                  <li class="cpw-nav-select-plates__item"><a>Terça</a></li>
-                  <li class="cpw-nav-select-plates__item"><a>Quarta</a></li>
-                  <li class="cpw-nav-select-plates__item"><a>Quinta</a></li>
-                  <li class="cpw-nav-select-plates__item"><a>Sexta</a></li>
+                <ul class="cpw-nav-select-plates__itens">
+                  <li class="cpw-nav-select-plates__item"><a><?php echo esc_html__(' Link ', 'wp-cpw'); ?></a></li>
+                  <li class="cpw-nav-select-plates__item"><a><?php echo esc_html__(' Link ', 'wp-cpw'); ?></a></li>
+                  <li class="cpw-nav-select-plates__item"><a><?php echo esc_html__(' Link ', 'wp-cpw'); ?></a></li>
+                  <li class="cpw-nav-select-plates__item"><a><?php echo esc_html__(' Link ', 'wp-cpw'); ?></a></li>
+                  <li class="cpw-nav-select-plates__item"><a><?php echo esc_html__(' Link ', 'wp-cpw'); ?></a></li>
                 </ul>
               </nac>
               <div class="cpw-flex-columns cpw-block-select-plates">

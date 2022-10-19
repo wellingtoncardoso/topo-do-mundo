@@ -31,7 +31,7 @@ header .cpw-sidebar .cpw-container .cpw-main-menu .cpw-nav-mobile{
   display: none;
   cursor: pointer;
   position: absolute;
-  top: 50px;
+  top: 35px;
   right: 10px;
 }
 @media(max-width: 991px){
@@ -141,44 +141,36 @@ header .cpw-sidebar .cpw-container .cpw-main-menu ul li a:hover{
     display: none;
   }
 }
-header .cpw-sidebar .cpw-container .cpw-searchbox span i{
-  color: var(--global--color-details);
-  font-size: var(--global--font-size-md);
-  transition: .3s ease;
-}
-header .cpw-sidebar .cpw-container .cpw-searchbox span i:hover{
-  cursor: pointer;
-  color: var(--global--color-secondary);
-}
-.cpw-modal-searchbox{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
-  background-color: rgba(0,0,0,.7);
-}
-.cpw-modal-searchbox input[type="search"]{
-  width: 800px;
-  height: 50px;
+header .cpw-sidebar .cpw-container .cpw-searchbox input{
   background-color: transparent;
   border-top: none;
   border-right: none;
-  border-bottom: 1px solid var(--global--color-secondary);
+  border-bottom: 1px solid var(--global--color-details);
   border-left: none;
-  padding-left: 1rem;
-  color: var(--global--color-details);
-  caret-color: var(--global--color-details);
-  font-weight: 300;
-}
-.cpw-modal-searchbox input[type="search"]::placeholder{
+  height: 48px;
+  padding-left: .8rem;
   color: var(--global--color-secondary);
+  font-weight: 300;
+  caret-color: var(--global--color-secondary);
+  transition: .3s all ;
+}
+header .cpw-sidebar .cpw-container .cpw-searchbox input:focus{
+  outline: none;
+  font-weight: 400;
+  border-color: var(--global--color-secondary);
+}
+header .cpw-sidebar .cpw-container .cpw-searchbox input:focus::placeholder,
+header .cpw-sidebar .cpw-container .cpw-searchbox  input:focus + span i{
+  transition: .3s all ease-in-out;
+  opacity: 0;
+}
+header .cpw-sidebar .cpw-container .cpw-searchbox span i{
+  color: var(--global--color-details);
+  font-size: var(--global--font-size-sm);
+  transition: .3s ease;
+  position: relative;
+  right: 32px;
+  top: 0;
 }
 
 /* footer */
@@ -191,4 +183,10 @@ header .cpw-sidebar .cpw-container .cpw-searchbox span i:hover{
   color: var(--global--color-details);
   font-weight: 300;
   line-height: 22px;
+}
+
+.cpw-copyright p{
+  font-size: .8rem;
+  color: var(--global--color-details);
+  font-weight: 300;
 }
