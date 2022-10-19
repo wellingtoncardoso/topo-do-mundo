@@ -232,6 +232,11 @@
   max-width: 470px;
   padding: var(--global--padding-card-sub);
 }
+@media(max-width: 575px){
+  #cpw-cards-four .cpw-card .cpw-details{
+    max-width: 172px;
+  }
+}
 #cpw-cards-four .cpw-card .cpw-details h3{
   font-size: var(--global--font-size-xl);
   font-weight: 300;
@@ -258,7 +263,8 @@
 }
 @media(max-width: 991px){
   #cpw-gallery .cpw-gallery{
-    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 #cpw-gallery .cpw-gallery .cpw-gallery__item img{
@@ -268,12 +274,12 @@
   display: block;
   object-fit: cover;
   transition: all linear .3s ;
-  opacity: .7;
+  opacity: .3;
 }
 #cpw-gallery .cpw-gallery .cpw-gallery__item img:hover{
   cursor: pointer;
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 @media(min-width: 992px){
   #cpw-gallery .cpw-gallery .cpw-gallery__item:nth-of-type(1){
@@ -313,7 +319,7 @@
     grid-row-end: 12;
   }
 }
-@media(max-width:992px){
+@media(max-width:991px){
   #cpw-gallery .cpw-gallery .cpw-gallery__item{
     margin-bottom: .8rem;
   }

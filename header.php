@@ -6,6 +6,7 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <div id="cpw-page" class="cpw-site">
     <header>
       <section class="cpw-sidebar">
@@ -28,6 +29,7 @@
             </ul>
           </nav>
           <div class="cpw-searchbox">
+            <input type="search" name="" id="" placeholder="O que busca?">
             <span><i class="fa fa-search"></i></span>
           </div>
        </div>
