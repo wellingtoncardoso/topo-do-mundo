@@ -16,7 +16,7 @@
       <div class="cpw-copyright">
         <div class="cpw-container">
           <div class="cpw-flex-columns">
-            <div><p><?php echo esc_html__( 'All rights reserved &copy; 2022 - Restaurante Topo do Mundo', 'wp-cpw' ); ?></p></div>
+            <div><p><?php echo get_theme_mod( 'set_copyright', 'Copyright X - All Rights Reserved' ); ?></p></div>
             <div><p><?php echo esc_html__( 'Developed by - 4 Dimensões', 'wp-cpw' ); ?></p></div>
           </div>
         </div>
