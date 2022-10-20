@@ -1,4 +1,6 @@
 <?php 
+  // file customizer
+  require get_template_directory() .'/inc/customizer.php';
 
   //function to add new scripts
   function wp_cpw_load_scripts(){

@@ -3,31 +3,27 @@
       <div id="cpw-primary" class="cpw-content-area">
         <main id="cpw-main" class="cpw-site-main">
           <section id="cpw-hero">
-            <div class="cpw-slick-slide">
-              <div  class="cpw-background" style="background-image: url( <?php echo get_template_directory_uri() ?>/assets/images/delete/slide01.jpg )">
-                <div class="cpw-details-slide">
-                  <div class="cpw-info-slide">
-                    <h2>Tasty Meats Make You Addicted slide 1</h2>
-                    <a href="#" class="cpw-button"><?php echo esc_html__( 'Lead more', 'wp-cpw' )?></a>
+            <div class="cpw-slick-hero">
+              <?php 
+                
+                $hero_min_height = get_theme_mod( 'set_hero_height', 100 );
+                $hero_background = wp_get_attachment_url( get_theme_mod( 'set_hero_background' ) );
+                $hero_title = get_theme_mod( 'set_hero_title', 'Please, add some title' );
+                $hero_subtitle = get_theme_mod( 'set_hero_subtitle', 'Please, add some subtitle' );
+                $hero_button_text = get_theme_mod( 'set_hero_button_text', 'Learn More' );
+                $hero_button_link = get_theme_mod( 'set_hero_button_link', '#' );
+
+              ?>
+              <div  class="cpw-background" style="background-image: url( <?php echo $hero_background ?>)">
+                <div class="cpw-details-hero" style="min-height: <?php echo $hero_min_height ?>vh">
+                  <div class="cpw-info-hero">
+                    <h2><?php echo $hero_title ?></h2>
+                    <p><?php echo nl2br( $hero_subtitle ); ?></p>
+                    <a href="<?php echo $hero_button_link ?>" class="cpw-button"><?php echo $hero_button_text ?></a>
                   </div>
                 </div>
               </div>
-              <div  class="cpw-background" style="background-image: url( <?php echo get_template_directory_uri() ?>/assets/images/delete/slide02.jpg )">
-                <div class="cpw-details-slide">
-                  <div class="cpw-info-slide">
-                    <h2>Tasty Meats Make You Addicted slide 2</h2>
-                    <a href="#" class="cpw-button"><?php echo esc_html__( 'Lead more', 'wp-cpw' )?></a>
-                  </div>
-                </div>
-              </div>
-              <div  class="cpw-background" style="background-image: url( <?php echo get_template_directory_uri() ?>/assets/images/delete/slide03.jpg )">
-                <div class="cpw-details-slide">
-                  <div class="cpw-info-slide">
-                    <h2>Tasty Meats Make You Addicted slide 3</h2>
-                    <a href="#" class="cpw-button"><?php echo esc_html__( 'Lead more', 'wp-cpw' )?></a>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </section>
           <!-- end slide -->

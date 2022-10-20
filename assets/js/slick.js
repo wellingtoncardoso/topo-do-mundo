@@ -1,5 +1,5 @@
 
-$( '.cpw-slick-slide' ).slick({
+$( '.cpw-slick-hero' ).slick({
   dots: true,
   arrows: false,
   slidesToShow: 1,
