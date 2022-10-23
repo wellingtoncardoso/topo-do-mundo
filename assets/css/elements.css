@@ -1,11 +1,17 @@
 /* medias */
+.cpw-background-page,
 .cpw-background{
   width: 100%;
   max-width: 100%;
-  height: 100vh !important;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.cpw-background-page{
+  height: 50vh;
+}
+.cpw-background{
+  height: 100vh;
 }
 @media(max-width: 991px){
   .cpw-background{
@@ -23,10 +29,10 @@
   transition: .3s;
 
 }
-.cpw-content-area .cpw-site-main #cpw-hero{
+.cpw-content-area .cpw-site-main .cpw-hero{
   margin-bottom: -30px;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .cpw-details-hero{
+.cpw-details-hero{
   position: relative;
   display: grid;
   align-items: center;
@@ -34,7 +40,7 @@
   max-width: 720px;
   margin: 0 auto;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .cpw-details-hero .cpw-info-hero{
+.cpw-details-hero .cpw-info-hero{
   position: absolute;
   width: 100%;
   max-width: 720px;
@@ -43,47 +49,50 @@
   left: 0;
   text-align: center;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .cpw-details-hero .cpw-info-hero h2{
+.cpw-background-page .cpw-details-hero .cpw-info-hero{
+  top: 50%;
+}
+.cpw-details-hero .cpw-info-hero h1,
+.cpw-details-hero .cpw-info-hero h2{
   font-weight: 200;
   font-family: var(--global--font-secondary);
   font-size: var(--global--font-size-xxl);
   margin-bottom: var(--global--margin-bottom);
-  width: 100%;
-  max-width: 720px;
+
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .cpw-details-hero .cpw-info-hero p{
+ .cpw-details-hero .cpw-info-hero p{
   font-size: var(--global--font-size-sm);
   line-height: 32px;
   margin-bottom: var(--global--margin-bottom);
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots{
   bottom: 30px;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li.slick-active button:before,
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li button{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li.slick-active button:before,
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li button{
   width: 24px;
   height: 24px;
   border-radius: 50%;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li button{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li button{
   border: 1px solid var(--global--color-secondary);
   background-color: var(--global--color-primary);
   opacity: .7;
   transition: .3s all ease-in-out;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li.slick-active button:before{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li.slick-active button:before{
   color: var(--global--color-secondary);
   background-color: var(--global--color-secondary);
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li.slick-active button{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li.slick-active button{
   opacity: 1;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-dots li button:before{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-dots li button:before{
   color: var(--global--color-primary);
 }
 
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-prev,
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-next{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-prev,
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-next{
   font-size: var(--global--font-size-xxxl) !important;
   width: 50px;
   height: 50px;
@@ -93,14 +102,14 @@
   align-items: center;
   justify-content: center;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-prev:before,
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-next:before{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-prev:before,
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-next:before{
   font-size: var(--global--font-size-md);
   line-height: 45px;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-next{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-next{
   right: 25px;
 }
-.cpw-content-area .cpw-site-main #cpw-hero .cpw-slick-hero .slick-prev{
+.cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-prev{
   left: 25px;
 }

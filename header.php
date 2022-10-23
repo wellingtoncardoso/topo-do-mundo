@@ -20,17 +20,15 @@
               <div class="cpw-line2"></div>
               <div class="cpw-line3"></div>
             </div>
-            <ul>  
-              <li><a href="">Home</a></li>
-              <li><a href="">Steaque</a></li>
-              <li><a href="">Menus</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
+           <?php wp_nav_menu( 
+              array(
+                'theme_location' => 'wp_cpw_main_menu',
+                'depth' => 2                
+              )); 
+            ?>
           </nav>
           <div class="cpw-searchbox">
-            <input type="search" name="" id="" placeholder="O que busca?">
-            <span><i class="fa fa-search"></i></span>
+            <?php get_search_form(); ?>
           </div>
        </div>
       </section>

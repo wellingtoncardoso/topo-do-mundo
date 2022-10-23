@@ -91,6 +91,7 @@ header .cpw-sidebar .cpw-container .cpw-main-menu .cpw-nav-mobile.active .cpw-li
 }
 
 header .cpw-sidebar .cpw-container .cpw-main-menu ul li{
+  position: relative;
   display: inline-block;
   padding: .1em 1em;
 }
@@ -111,6 +112,9 @@ header .cpw-sidebar .cpw-container .cpw-main-menu ul li:hover::after{
   top: 15px;
   display: block;
   border-bottom: 1px solid var(--global--color-secondary);
+}
+header .cpw-sidebar .cpw-container .cpw-main-menu ul li .sub-menu li:hover::after{
+  border-bottom: none !important;
 }
 @media(max-width: 992px){
   header .cpw-sidebar .cpw-container .cpw-main-menu ul li:hover::after{
@@ -134,6 +138,45 @@ header .cpw-sidebar .cpw-container .cpw-main-menu ul li a:hover{
   header .cpw-sidebar .cpw-container .cpw-main-menu ul li a:hover{
     color: var(--global--color-details);
   }
+}
+header .cpw-sidebar .cpw-container .cpw-main-menu ul li .sub-menu{
+  display: none;
+  position: absolute;
+  top: 22px;
+  background-color: var(--global--color-details);
+  transition: .3s ease-in-out;
+  z-index: 2;
+}
+@media(max-width: 991px){
+  header .cpw-sidebar .cpw-container .cpw-main-menu ul li .sub-menu{
+    width: 100%;
+    max-width: 200px;
+    background-color: var(--global--color-details) !important;
+    height: auto;
+    padding-top: 0;
+    top: 45px;
+    left: calc( 100px + (50%) );
+  }
+  header .cpw-sidebar .cpw-container .cpw-main-menu ul li:hover .sub-menu li{
+    border-bottom: none;
+    background-color: transparent !important;
+  }
+  header .cpw-sidebar .cpw-container .cpw-main-menu ul li:hover .sub-menu li a{
+    color: var(--global--color-secondary);
+  }
+}
+header .cpw-sidebar .cpw-container .cpw-main-menu ul li .sub-menu li{
+  display: block;
+  padding: .5rem .7rem;
+  border-bottom: 1px solid var(--global--color-primary);
+}
+header .cpw-sidebar .cpw-container .cpw-main-menu ul li .sub-menu li a{
+  color: var(--global--color-primary);
+  font-size: var(--global--font-size-sm);
+  font-weight: 400;
+}
+header .cpw-sidebar .cpw-container .cpw-main-menu ul li:hover .sub-menu{
+  display: block;
 }
 
 @media(max-width: 991px){

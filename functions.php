@@ -28,8 +28,8 @@
      //register menu add
     register_nav_menus(
       array(
-        'wp_cpw_main_menu' => esc_html__( 'Main Menu', 'wp-cpw' ),
-        'wp_cpw_footer_menu' => esc_html__( 'Footer Menu', 'wp-cpw' )
+        'wp_cpw_main_menu' => __( 'Main Menu', 'wp-cpw' ),
+        'wp_cpw_footer_menu' => __( 'Footer Menu', 'wp-cpw' )
       )
     );
 

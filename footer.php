@@ -17,7 +17,7 @@
         <div class="cpw-container">
           <div class="cpw-flex-columns">
             <div><p><?php echo get_theme_mod( 'set_copyright', 'Copyright X - All Rights Reserved' ); ?></p></div>
-            <div><p><?php echo esc_html__( 'Developed by - 4 Dimensões', 'wp-cpw' ); ?></p></div>
+            <div><p><?php echo _e( 'Developed by - 4 Dimensões', 'wp-cpw' ); ?></p></div>
           </div>
         </div>
       </div>

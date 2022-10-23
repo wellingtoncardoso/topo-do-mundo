@@ -169,6 +169,11 @@
   box-shadow: var(--global--box-shadow-light);
   transition: .3s ease;
 }
+@media(max-width: 767px){
+  #cpw-our-starters .cpw-card-owr-starters{
+    max-width: 300px;
+  }
+}
 #cpw-our-starters .cpw-card-owr-starters:hover{
   box-shadow: none;
 }
@@ -366,6 +371,11 @@
   font-size: var(--global--font-size-lg);
   text-align: center;
 }
+@media(max-width: 991px){
+  #cpw-testimonial .cpw-testimonial .cpw-content p{
+    font-size: var(--global--font-size-base);
+  }
+}
 #cpw-testimonial .cpw-testimonial .cpw-content .fa{
   color: var(--global--color-secondary);
   font-size: var(--global--font-size-sm);
@@ -468,6 +478,10 @@
       gap: 45px;
   }
 }
+#cpw-select-plates .cpw-flex-columns figure{
+  width: 100%;
+  max-width: 539px;
+}
 #cpw-select-plates .cpw-flex-columns figure img{
   width: 100%;
   max-width: 539px;
@@ -498,4 +512,15 @@
   color: var(--global--color-details);
   background-color: var(--global--color-secondary);
 
+}
+
+/* tags 'H' and 'p' */
+@media(max-width: 575px){
+  h2, h3, h4, h5{
+    font-size: var(--global--font-size-lg) !important;
+  }
+  p{
+    font-size: .875rem !important;
+    line-height: 20px !important;
+  }
 }
