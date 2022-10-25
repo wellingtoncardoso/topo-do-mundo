@@ -12,7 +12,7 @@
       <section class="cpw-sidebar">
        <div class="cpw-container">
           <div class="cpw-logo">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri('')?>/assets/images/topo-do-mundo-logo-orange.png" alt="Logo Restaurante Topo do Mundo"></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php the_custom_logo(); ?></a>
           </div>
           <nav class="cpw-main-menu">
             <div class="cpw-nav-mobile">
@@ -20,17 +20,15 @@
               <div class="cpw-line2"></div>
               <div class="cpw-line3"></div>
             </div>
-            <ul>  
-              <li><a href="">Home</a></li>
-              <li><a href="">Steaque</a></li>
-              <li><a href="">Menus</a></li>
-              <li><a href="">News</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
+           <?php wp_nav_menu( 
+              array(
+                'theme_location' => 'wp_cpw_main_menu',
+                'depth' => 2                
+              )); 
+            ?>
           </nav>
           <div class="cpw-searchbox">
-            <input type="search" name="" id="" placeholder="O que busca?">
-            <span><i class="fa fa-search"></i></span>
+            <?php get_search_form(); ?>
           </div>
        </div>
       </section>
