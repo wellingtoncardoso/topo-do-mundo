@@ -24,7 +24,10 @@
   }
   add_action( 'wp_enqueue_scripts', 'wp_cpw_load_scripts' );
  
-  function wp_cpw_config(){
+  function wp_cpw_config(){  
+    $textdomain = 'wp-cpw';
+    load_theme_textdomain( $textdomain, get_template_directory() .'/languages/' );
+
      //register menu add
     register_nav_menus(
       array(
@@ -37,19 +40,78 @@
       'height'  => 90,
       'width'   => 1920
     );
-    add_theme_support( 'custom-header' );
-    add_theme_support( 'post-thumgnails' );
+    add_theme_support( 'custom-header', $args );
+    add_theme_support( 'post-thumbnails' );
     add_theme_support( 'custom-logo', array(
-      'width'   => 180,
-      'height'  => 105,
-      'flex-width'  => true,
+      'width'   => 200,
+      'height'  => 110,
       'flex-height' => true,
+      'flex-width'  => true
     ));
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
     add_theme_support( 'title-tag' );
   }
-  add_action( 'after_setup_theme','wp_cpw_config' );
+  add_action( 'after_setup_theme','wp_cpw_config', 0 );
+
+  add_action( 'widgets_init', 'wp_cpw_siderbars' );
+  function wp_cpw_siderbars(){
+    register_sidebar(
+      array(
+        'name'          => __( 'Blog Sidebar', 'wp-cpw' ),
+        'id'            => 'sidebar-blog',
+        'description'   => __( 'this is the BLog Sidebar. You can add your widgets here.', 'wp-cpw' ),
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</dib>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>'
+      )
+    );
+    register_sidebar(
+      array(
+        'name'          => __( 'Reservation Form', 'wp-cpw' ),
+        'id'            => 'reservation-form',
+        'description'   => __( 'Reservation Form Area', 'wp-cpw' ),
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</dib>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>'
+      )
+    );
+    register_sidebar(
+      array(
+        'name'          => __( 'Column 1 Footer', 'wp-cpw' ),
+        'id'            => 'column-1-footer',
+        'description'   => __( 'Footer First Column', 'wp-cpw' ),
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</dib>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>'
+      )
+    );
+    register_sidebar(
+      array(
+        'name'          => __( 'Column 2 Footer', 'wp-cpw' ),
+        'id'            => 'column-2-footer',
+        'description'   => __( 'Footer Second Column', 'wp-cpw' ),
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</dib>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>'
+      )
+    );
+    register_sidebar(
+      array(
+        'name'          => __( 'Column 3 Footer', 'wp-cpw' ),
+        'id'            => 'column-3-footer',
+        'description'   => __( 'Footer Third Column', 'wp-cpw' ),
+        'before_widget' => '<div class="widget-wrapper">',
+        'after_widget'  => '</dib>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>'
+      )
+    );
+  }
 
   // if the wp version is less than 5.2 we will create the wp_body_open function
   if( ! function_exists( 'wp_body_open' ) ){

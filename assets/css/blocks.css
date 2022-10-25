@@ -44,6 +44,12 @@
     max-width: 960px  !important;
   }
 }
+@media(max-width: 991px){
+  .blog .cpw-container,
+  .archive .cpw-container{
+    flex-wrap: wrap;
+  }
+}
 @media(min-width: 1200px){
   .cpw-container{
     max-width: 1140px  !important;

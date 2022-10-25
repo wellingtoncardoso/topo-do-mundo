@@ -113,3 +113,58 @@
 .cpw-content-area .cpw-site-main .cpw-hero .cpw-slick-hero .slick-prev{
   left: 25px;
 }
+
+/* forms */
+.cpw-form{
+  width: 100%;
+}
+.cpw-form form p{
+  width: 100%;
+  max-width: 490px;
+}
+.cpw-form span select:focus,
+.cpw-form span textarea:focus,
+.cpw-form span input:focus{
+  outline: none;
+}
+.cpw-form span select,
+.cpw-form span textarea::placeholder,
+.cpw-form span input::placeholder{
+  font-weight: 300;
+  padding-left: .2rem;
+}
+.cpw-form span select,
+.cpw-form span input{
+  width: 100%;
+  max-width: 480px !important;
+  height: 40px;
+  color: var(--global--color-primary);
+  padding-left: .4rem;
+  margin: .4rem 0;
+}
+.cpw-form span select{
+  max-width: 490px !important;
+  height: 44px;
+}
+.cpw-form span textarea{
+  width: 100%;
+}
+.cpw-form label{
+  font-size: var(--global--font-size-sm);
+  color: var(--global--color-details);
+}
+.cpw-form input[type="submit"]{
+  background-color: var(--global--color-details);
+  padding: .7rem 1rem;
+  border: 1px solid var(--global--color-secondary);
+  transition: .3s ease-in-out;
+}
+.cpw-form input[type="submit"]:hover{
+  cursor: pointer;
+  background-color: var(--global--color-secondary);
+  color: var(--global--color-details);
+  border-color: var(--global--color-details);
+}
+.cpw-form .wpcf7-spinner{
+  display: none;
+}

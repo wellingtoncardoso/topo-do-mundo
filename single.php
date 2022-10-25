@@ -1,17 +1,18 @@
 <?php get_header(); ?>
-  <div id="cpw-primary">
-    <div id="cpw-main">
+  <div class="cpw-primary">
+    <div class="cpw-main">
       <div class="cpw-container">
         <?php 
           while( have_posts() ): 
             the_post();?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
               <header>
-                <h2><?php the_title();?></h2>
+                <?php the_post_thumbnail( 'full' ); ?>
+                <h1><?php the_title();?></h1>
                 <div class="cpw-details">
                   <p>Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
-                  <p>Categories: <?php the_category( '' ); ?></p>
-                  <p>Tags: <?php the_tags( '', ', ' ); ?></p>
+                  <p><?php _e( 'Categories', 'wp-cpw' ); ?>: <?php the_category( '' ); ?></p>
+                  <p><?php _e( 'Tags', 'wp-cpw' ); ?>: <?php the_tags( '', ', ' ); ?></p>
                 </div>
               </header>          
               <div class="cpw-content">
