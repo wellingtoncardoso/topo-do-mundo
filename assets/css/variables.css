@@ -9,6 +9,7 @@
   /* margins and paddings */
   --global--margin-top: 64px;
   --global--margin-bottom: 32px;
+  --global--pading-full: 200px;
   --global--padding: 64px;
   --global--padding-card: 16px;
   --global--padding-card-sub: 8px;
