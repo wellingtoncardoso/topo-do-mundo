@@ -1,26 +1,13 @@
 <?php get_header(); ?>
-  <div id="cpw-primary">
-    <div id="cpw-main">
+  <div class="cpw-primary">
+    <div class="cpw-main">
       <div class="cpw-container">
-        <?php 
-          while( have_posts() ): 
-            the_post();?>
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-              <header>
-                <h2><?php the_title();?></h2>
-                <div class="cpw-details">
-                  <p>Posted in <?php echo get_the_date(); ?> by <?php the_author_posts_link(); ?></p>
-                  <p>Categories: <?php the_category( '' ); ?></p>
-                  <p>Tags: <?php the_tags( '', ', ' ); ?></p>
-                </div>
-              </header>          
-              <div class="cpw-content">
-                <?php the_excerpt(); ?>
-              </div>
-            </article>
-            <?php 
-          endwhile;
-        ?>
+        <section id="cpw-articles" class="cpw-padding">
+          <div class="cpw-container">
+            <?php get_template_part( 'template-parts/content/content' , 'search' ); ?>
+            <!-- <?php get_sidebar( ); ?> -->
+          </div>
+        </section>
       </div>
     </div>
   </div>

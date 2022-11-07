@@ -2,6 +2,6 @@
   <div>
     <label class="screen-reader-text" for="s"></label>
     <input type="text" value="<?php echo get_search_query();?>" name="s" id="s" placeholder="O que busca?">
-    <span><i class="fa fa-search"></i></span>
+    <span><i class="fa fa-magnifying-glass"></i></span>
   </div>
 </form>

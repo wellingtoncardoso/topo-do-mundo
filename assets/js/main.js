@@ -12,3 +12,6 @@ import( './gallery.js' )
 
 // impor fiel select plates
 import( './select-plates.js' )
+
+// Import file header
+import( './header.js' )

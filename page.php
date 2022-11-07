@@ -1,19 +1,40 @@
 <?php get_header(); ?>
-  <div id="cpw-primary">
+  <div class="cpw-primary">
     <div class="cpw-main">
-      <section class="cpw-hero">
+      <div class="cpw-container cpw-padding">
+        <div class="cpw-content">
           <?php 
-            $hero_min_height = get_theme_mod( 'set_hero_height', 50 );
-            $hero_background = wp_get_attachment_url( get_theme_mod( 'set_hero_background' ) );
+          while( have_posts() ) : the_post();?>
+            <h1><?php the_title(); ?></h1>
+            <?php
+            the_content(); 
+          endwhile;?>
+        </div>
+      </div>
+      <div class="cpw-background-light">
+        <div class="cpw-container">
+          <?php 
+            switch($post->post_name){
+              case 'event' :
+                echo '<div class="cpw-form">';
+                  if( is_active_sidebar( 'reservation-form' ) ) dynamic_sidebar( 'reservation-form' );
+                echo '</div>';
+              break;
+              case 'about' : 
+                get_template_part( 'template-parts/content/content', 'team' );
+              break;
+              case 'programmings' :
+                get_template_part( 'template-parts/content/content', 'programmings' );
+              break;
+              case 'location' :         
+                echo "API GOOGLE MAPS 'key' => 'AIzaSyBiN9yM-I4GVhzKJ8X0atpKY76mwAAzP04 ";  
+              break;
+              default: 
+              break;
+            }   
           ?>
-          <div  class="cpw-background-page" style="background-image: url( <?php echo $hero_background ?>)">
-            <div class="cpw-details-hero" style="min-height: <?php echo $hero_min_height ?>vh">
-              <div class="cpw-info-hero">
-                <h1><?php the_title(); ?></h1>
-              </div>
-            </div>
-          </div>
-      </section>
+        </div>
+      </div>
     </div>
   </div>
 <?php get_footer(); ?>
