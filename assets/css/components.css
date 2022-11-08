@@ -132,6 +132,7 @@ header .cpw-sidebar .cpw-container .cpw-main-menu .cpw-nav-mobile.active .cpw-li
     max-width: 80vw;
     height: 100vh;
     padding-top: .875rem;
+    z-index: 2;
     background-color: var(--global--color-secondary) !important;
     transform: translateX(-100%);
     transition: transform .3s ease-in;
@@ -288,6 +289,22 @@ header .cpw-sidebar .cpw-container .cpw-searchbox span i{
   color: var(--global--color-details);
   font-size: var(--global--font-size-sm);
 }
+@media(max-width: 991px){
+  header .cpw-button-home-mobile{
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    z-index: 1;
+  }
+  header .cpw-button-home-mobile i{
+    color: var(--global--color-details);
+    font-size: var(--global--font-size-lg);
+    transition: .3s ease-in-out;
+  }
+  header .cpw-button-home-mobile i:hover{
+    color: var(--global--color-secondary);
+  }
+}
 
 /* footer */
 @media(min-width: 992px){
@@ -307,6 +324,11 @@ footer.cpw-site-footer .cpw-block-footer .widget-wrapper h2{
   font-weight: 600;
   font-size: var(--global--font-size-md);
   margin-bottom: 1.4rem;
+}
+@media(max-width: 575px){
+  footer.cpw-site-footer .cpw-block-footer .widget-wrapper h2{
+    font-size: var(--global--font-size-sm) !important;
+  }
 }
 footer.cpw-site-footer .cpw-block-footer .widget-wrapper p{
   font-size: .875rem;

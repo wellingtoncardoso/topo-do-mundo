@@ -2,7 +2,7 @@
   // file customizer
   require get_template_directory() .'/inc/customizer.php';
   //file functions add
-  require get_template_directory() .'/inc/functions.php';
+  require get_template_directory() .'/inc/custom-posts.php';
   //file widgets add
   require get_template_directory() .'/inc/widgets.php';
 
@@ -71,6 +71,14 @@
       )
     );
   }  
+
+  //Change browser header color on mobile to be the site's secondary color
+  function wp_cpw_change_header_color(){
+    echo '<meta name="theme-color" content="#CB7822">';
+    echo '<meta name="apple-mobile-web-app-status-bar-style" content="#CB7822">';
+    echo '<meta name="msapplication-navbutton-color" content="#CB7822">';
+  }
+  add_action( 'wp_head', 'wp_cpw_change_header_color' );
 
   // if the wp version is less than 5.2 we will create the wp_body_open function
   if( ! function_exists( 'wp_body_open' ) ){

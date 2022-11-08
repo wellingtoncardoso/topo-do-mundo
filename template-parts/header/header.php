@@ -21,9 +21,9 @@
                     <?php the_sub_field( 'item_font_awesome_rede_social' ); ?>
                   </a>
                 </li>
-              <?php endwhile;
+                <?php endwhile;
             endif;
-          ?>
+            ?>
         </nav>
       </div>
     </div>
@@ -39,8 +39,11 @@
             'theme_location' => 'wp_cpw_main_menu',
             'depth' => 2                
           )); 
-        ?>
+          ?>
       </nav>
+      <div class="cpw-mobile">
+        <a class="cpw-button-home-mobile" href="<?php echo esc_url( home_url( '/' ) )?>"><i class="fa-solid fa-house"></i></a>
+      </div>
       <div class="cpw-searchbox">
         <?php get_search_form(); ?>
       </div>
