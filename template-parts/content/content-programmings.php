@@ -7,9 +7,9 @@
         <div class="cpw-flex-columns">
           <div  class="cpw-background" 
                 style="background-image: url( <?php the_post_thumbnail_url(); ?> )"></div>
-          <div class="cpw-content">
+          <div class="cpw-contents">
             <h3><?php the_title(); ?></h3>
-            <?php the_content(); ?><br>
+            <?php the_content(); ?>
             <p><span class="cpw-add-event-date"><?php the_field( 'add_event_date' ); ?></span></p>
           </div>
         </div>

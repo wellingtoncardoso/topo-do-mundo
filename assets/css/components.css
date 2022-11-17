@@ -24,7 +24,7 @@ header .cpw-sidebar .cpw-sidebar-text-topo p{
   color: var(--global--color-details);
   font-size: var(--global--font-size-size);
   font-family: var(--global--font-primary);
-  font-weight: 300;
+  font-weight: 600 !important;
   margin: .2rem 0;
 }
 @media(max-width: 991px){
@@ -139,6 +139,9 @@ header .cpw-sidebar .cpw-container .cpw-main-menu .cpw-nav-mobile.active .cpw-li
   }
   header .cpw-sidebar .cpw-container .cpw-main-menu ul li:first-child{
     padding: 0;
+  }
+  header .cpw-sidebar .cpw-container .cpw-main-menu ul li:first-child:hover{
+    background-color: transparent !important;
   }
   header .cpw-sidebar .cpw-container .cpw-main-menu ul li:first-child img{
     text-align: center;

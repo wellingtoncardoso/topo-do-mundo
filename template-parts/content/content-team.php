@@ -8,7 +8,7 @@
     while( $list->have_posts() ): $list->the_post(); ?>
       <div class="cpw-container cpw-team">
         <div class="cpw-flex-columns">
-          <div class="cpw-content"><?php the_content( ); ?></div>
+          <div class="cpw-contents"><?php the_content( ); ?></div>
           <div class="cpw-thumbnail"><?php the_post_thumbnail( 'large' ); ?></div>
         </div>
       </div>

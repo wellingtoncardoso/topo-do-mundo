@@ -1,0 +1,38 @@
+/* body setting */
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* title tags and tagine */
+h1{
+  margin-bottom: 32px;
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 2.5rem;
+  margin-bottom: 32px;
+  color: #CB7822;
+  font-weight: 300;
+}
+p{
+  font-size: 1.125rem;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+/* Main column width */
+.wp-block {
+  max-width: 1140px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align='wide'] {
+  max-width: 1300px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align='full'] {
+  max-width: none;
+}
+

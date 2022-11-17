@@ -1,11 +1,17 @@
 <?php get_header(); ?>
   <div class="cpw-primary">
     <div class="cpw-main">
-      <section id="cpw-articles" class="cpw-padding">
-        <div class="cpw-container">
-          <?php get_template_part( 'template-parts/menu/menu' ); ?>
+      <div class="cpw-container">
+        <div class="cpw-content">
+          <div class="cpw-col">
+            <section id="cpw-articles" class="cpw-padding">
+              <div class="cpw-container">
+                <?php get_template_part( 'template-parts/menu/menu' ); ?>
+              </div>
+            </section>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 <?php get_footer(); ?>
