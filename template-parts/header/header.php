@@ -13,17 +13,19 @@
       </div>
       <div>
         <nav class="cpw-rede-social">
-          <?php 
-            if( have_rows( 'add_new_rede_social', 'option' ) ):
-              while( have_rows( 'add_new_rede_social', 'option' ) ): the_row(); ?>
-                <li>
-                  <a href="<?php the_sub_field( 'link_rede_social' ); ?>" aria-label="<?php the_sub_field( 'link_rede_social' ); ?>" target="_blank" rel="nofollow">
-                    <?php the_sub_field( 'item_font_awesome_rede_social' ); ?>
-                  </a>
-                </li>
-                <?php endwhile;
-            endif;
+          <ul>
+            <?php 
+              if( have_rows( 'add_new_rede_social', 'option' ) ):
+                while( have_rows( 'add_new_rede_social', 'option' ) ): the_row(); ?>
+                  <li>
+                    <a href="<?php the_sub_field( 'link_rede_social' ); ?>" aria-label="<?php the_sub_field( 'link_rede_social' ); ?>" target="_blank" rel="nofollow">
+                      <?php the_sub_field( 'item_font_awesome_rede_social' ); ?>
+                    </a>
+                  </li>
+                  <?php endwhile;
+              endif;
             ?>
+          </ul>
         </nav>
       </div>
     </div>

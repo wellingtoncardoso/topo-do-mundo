@@ -4,7 +4,7 @@
       while( have_posts() ): the_post();?>
         <article>
           <div class="cpw-details">
-            <div class="cpw-content">
+            <div class="cpw-contents">
               <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
               <p><?php the_excerpt(); ?></p>
             </div>

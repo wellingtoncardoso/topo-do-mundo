@@ -7,7 +7,7 @@
             <a href="<?php the_permalink(); ?>"><?php if( has_post_thumbnail () ){ the_post_thumbnail( 'medium' ); } ?></a>         
           </figure>
           <div class="cpw-details">
-            <div class="cpw-content">
+            <div class="cpw-contents">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p><?php the_excerpt(); ?></p>
               <div class="cpw-info">

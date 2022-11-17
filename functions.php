@@ -24,7 +24,6 @@
     wp_enqueue_style( 'wp-cpw-magnific-popup-style', get_stylesheet_directory_uri(). '/lib/magnific-popup/magnific-popup.css', array( 'wp-cpw-assets-style' ), '1.0', 'all' );
     wp_enqueue_script( 'wp-cpw-magnific-popoup-script', get_stylesheet_directory_uri() .'/lib/magnific-popup/magnific-popup.min.js', array( 'wp-cpw-jquery' ), '3.1.0', true );
 
-
   }
   add_action( 'wp_enqueue_scripts', 'wp_cpw_load_scripts' );
  
@@ -55,8 +54,15 @@
     add_theme_support( 'automatic-feed-links' );
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
     add_theme_support( 'title-tag' );
+
+    //theme supports Gutenberg
+    add_theme_support( 'align-wide' );
+    add_theme_support( 'responsive-embeds' );
+    add_theme_support( 'editor-styles' );
+    add_editor_style( 'style-editor.css' );
   }
   add_action( 'after_setup_theme','wp_cpw_config', 0 );
+
 
   // general config website Restaurante Topo do Mundo
   if( function_exists( 'acf_add_options_page' ) ){

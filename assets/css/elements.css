@@ -130,12 +130,13 @@
 /* forms */
 .cpw-form{
   width: 100%;
-  max-width: 720px;
+  display: block;
   margin: 0 auto;
 }
-.cpw-form form p{
-  width: 100%;
-  margin-bottom: 0;
+@media(min-width: 768px){
+  .cpw-form{
+    max-width: 720px;
+  }
 }
 .cpw-form select:focus,
 .cpw-form textarea:focus,
@@ -146,22 +147,21 @@
 .cpw-form textarea::placeholder,
 .cpw-form input::placeholder{
   font-weight: 300;
-  padding-left: .4rem;
 }
 .cpw-form textarea::placeholder{
   padding-top: .3rem;
 }
+.cpw-form textarea,
 .cpw-form select,
 .cpw-form input{
-  height: 40px;
+  display: block;
+  width: -webkit-fill-available;
   color: var(--global--color-primary);
-  padding-left: .4rem;
   margin: .4rem 0;
 }
 .cpw-form select,
-.cpw-form textarea{
-  width: 100%;
-  max-width: 100%;
+.cpw-form input{
+  height: 40px;
 }
 .cpw-form label{
   font-size: var(--global--font-size-sm);
@@ -169,7 +169,10 @@
 }
 .cpw-form input[type="submit"]{
   width: 100%;
-  max-width: 320px !important;
+  max-width: 240px !important;
+  margin: 1.4rem auto 0;
+  display: grid;
+  align-items: center;
   background-color: var(--global--color-details);
   padding: .7rem 1rem;
   border: 1px solid var(--global--color-secondary);
@@ -181,9 +184,39 @@
   color: var(--global--color-details);
   border-color: var(--global--color-details);
 }
-.cpw-form .cpw-width-50{
-  max-width: 320px;
-}
 .cpw-form .wpcf7-spinner{
   display: none;
+}
+
+@media(min-width: 768px){
+  .cpw-form form p{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cpw-form form p span.wpcf7-form-control-wrap{
+    width: 50%;
+  }
+  .cpw-form form p span.wpcf7-form-control-wrap:nth-of-type(7){
+    width: 100% !important;
+  }
+  .wpcf7-form-control-wrap:nth-of-type(1) input,
+  .wpcf7-form-control-wrap:nth-of-type(2) input,
+  .wpcf7-form-control-wrap:nth-of-type(3) input,
+  .wpcf7-form-control-wrap:nth-of-type(4) input,
+  .wpcf7-form-control-wrap:nth-of-type(5) select,
+  .wpcf7-form-control-wrap:nth-of-type(6) select{
+    display: flex;
+    flex-basis: 50%;
+  }
+  .wpcf7-form-control-wrap:nth-of-type(1) input,
+  .wpcf7-form-control-wrap:nth-of-type(3) input,
+  .wpcf7-form-control-wrap:nth-of-type(5) select{
+    float: left;
+    margin-right: 5px;
+  }
+  .wpcf7-form-control-wrap:nth-of-type(2) input,
+  .wpcf7-form-control-wrap:nth-of-type(4) input,
+  .wpcf7-form-control-wrap:nth-of-type(6) select{
+    float: right;
+  }
 }
