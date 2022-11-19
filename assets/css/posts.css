@@ -1,21 +1,20 @@
 /* title tags and tagine */
 h1{
+  font-family: var(--global--font-primary);
   margin-bottom: var(--global--margin-bottom);
   font-size: var(--global--font-size-xl);
-  font-family: var(--global--font-secondary);
 }
 h2{
-  font-size: var(--global--font-size-xl);
+  font-family: var(--global--font-fourth) !important;
+  font-size: var(--global--font-size-xxl);
   margin-bottom: var(--global--margin-bottom);
   color: var(--global--color-secondary);
-  font-weight: 300;
 }
 p{
-  font-family: var(--global--font-secondary);
+  font-family: var(--global--font-secondary) !important;
   font-size: var(--global--font-size-sm);
-  line-height: 26px;
-  font-weight: 400;
-  margin-bottom: 1.2rem;
+  line-height: 20px;
+  margin-bottom: .8rem;
 }
 
 /* display's */
@@ -39,9 +38,6 @@ p{
 /* default pages */
 .cpw-primary{
   background-color: var(--global--color-details) !important;
-}
-.cpw-primary .cpw-main{
-  /* padding-top: 7rem; */
 }
 .cpw-primary .cpw-main .cpw-container article header{
   position: initial;
@@ -142,31 +138,36 @@ p{
 #cpw-about-home .cpw-grid-2 .cpw-contents{
   padding: var(--global--padding-card);
 }
+#cpw-about-home .cpw-grid-2 .cpw-contents:last-child{
+  padding: 0;
+}
 #cpw-about-home .cpw-grid-2 .cpw-information{
   color: var(--global--color-details);
   background-color: var(--global--color-secondary);
-  padding: 7rem 2rem;
+  padding: 2rem;
   height: auto;
   display: grid;
   align-items: center;
 }
 #cpw-about-home .cpw-grid-2 .cpw-information .cpw-contents p{
-  font-size: var(--global--font-size-md);
+  font-size: var(--global--font-size-sm);
   font-weight: 300;
-  line-height: 28px;
+  line-height: 24px;
   margin-bottom: .8rem;
 }
 
 #cpw-about-home .cpw-grid-2 .cpw-information .cpw-contents hr{
-  margin: 1rem 0 3rem;
+  margin: 2rem 0;
 }
+
 #cpw-about-home .cpw-grid-2 .cpw-information .cpw-contents .cpw-button{
-  color: var(--global--color-details);
+  color: var(--global--color-secondary);
   border-color: var(--global--color-details);
+  background-color: var(--global--color-details);
 }
 #cpw-about-home .cpw-grid-2 .cpw-information .cpw-contents .cpw-button:hover{
-  color: var(--global--color-secondary);
-  background-color: var(--global--color-details); 
+  color: var(--global--color-details);
+  background-color: transparent; 
 }
 #cpw-about-home .cpw-button{
   border: 1px solid var(--global--color-secondary);
@@ -188,6 +189,7 @@ p{
 }
 
 /* our gallery */
+#cpw-gallery p,
 #cpw-gallery h2{
   color: var(--global--color-details);
   text-align: center;
@@ -277,12 +279,12 @@ p{
   max-width: 330px;
   margin: 0 .2rem;
   background-color: var(--global--color-details);
-  box-shadow: var(--global--box-shadow-light);
+  border: .1px solid rgba(203,120,64,0.2);
+  border-radius: var(--globla--border-radius);
   transition: .3s ease-in-out;
 }
 #cpw-articles article:hover{
   cursor: pointer;
-  box-shadow: none;
 }
 #cpw-articles article figure{
   width: 100%;
@@ -576,11 +578,6 @@ p{
 }
 
 /* programmings */
-@media(min-width: 992px){
-  .cpw-container.cpw-programmings:nth-child(even) .cpw-flex-columns{
-    flex-direction: row-reverse;
-  }
-}
 .cpw-programmings .cpw-flex-columns{
   margin-bottom: var(--global--margin-bottom);
 }

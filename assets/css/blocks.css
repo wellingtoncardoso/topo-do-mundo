@@ -89,7 +89,7 @@
 
 /* padding */
 .cpw-padding{
-  padding-top: var(--global--pading-full);
+  padding-top: var(--global--padding);
   padding-bottom: var(--global--padding);
 }
 @media(max-width: 991px){
@@ -144,6 +144,11 @@
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+@media(min-width: 992px){
+  .cpw-container.cpw-flex-cards:nth-child(even) .cpw-flex-columns{
+    flex-direction: row-reverse;
+  }
 }
 
 /* behaviors */

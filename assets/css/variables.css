@@ -9,14 +9,16 @@
   /* margins and paddings */
   --global--margin-top: 64px;
   --global--margin-bottom: 32px;
-  --global--pading-full: 200px;
+  --global--padding-full: 200px;
   --global--padding: 64px;
   --global--padding-card: 16px;
   --global--padding-card-sub: 8px;
 
   /* font family*/
-  --global--font-primary: 'Roboto', sans-serif;
-  --global--font-secondary: 'Roboto Condensed', sans-serif;
+  --global--font-primary: 'Florentia', sans-serif;
+  --global--font-secondary: 'Chapaza', sans-serif;
+  --global--font-third: 'Dressler';
+  --global--font-fourth: "Reactin";
 
   /* font size */
   --global--font-size-base: 1.25rem;
@@ -37,4 +39,7 @@
   
   /* box shadow  */
   --global--box-shadow-light: 0 0 60px rgba(203, 120, 34, .2);
+
+  /* border radius */
+  --globla--border-radius: 8px;
 }
