@@ -43,7 +43,8 @@
                       <br>
                       <a href="#" class="cpw-button"><?php _e('View more','wp-cpw' ); ?></a>
                     </div>
-                    <div class="cpw-information">
+                    <div class="cpw-information cpw-background"
+                        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url( '<?php the_field( 'background_image_information', 'option' ); ?>' )">
                       <div class="cpw-contents">
                         <?php 
                           if( have_rows ( 'add_hours', 'option' ) ):

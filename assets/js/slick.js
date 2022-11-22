@@ -1,4 +1,4 @@
-
+//hero primary
 $( '.cpw-slick-hero' ).slick( {
   dots: true,
   arrows: false,
@@ -14,7 +14,7 @@ $( '.cpw-slick-hero' ).slick( {
 
 //inner pages slider
 $( '.cpw-slick-img__520' ).slick( {
-  dots: true,
+  dots: false,
   arrows: false,
   slidesToShow: 1,
   slidesToScroll: 1,
