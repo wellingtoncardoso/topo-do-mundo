@@ -5,7 +5,7 @@
   // the custom function to register a menu post type
   function wp_cpw_custom_post_menu(){
     $label = array(
-      'name'                => esc_html__( 'Menus', 'wp-cpw' ),
+      'name'                => esc_html__( 'Menu', 'wp-cpw' ),
       'singular_name'       => esc_html__( 'Menu', 'wp-cpw' ),
       'add_new'             => esc_html__( 'Add New Menu', 'wp-cpw' ),
       'add_new_item'        => esc_html__( 'Add New Menu', 'wp-cpw' ),
@@ -29,7 +29,7 @@
       'show_in_nav_menus' => true,
       'has_archive'       => true,
       'query_var'         => true,
-      'icon_url'          => 'dashicons-media-text'
+      'menu_icon'          => 'dashicons-media-text'
     );
     register_post_type( 'menu', $args );
   }
@@ -62,7 +62,7 @@
       'show_in_nav_menus' => false,
       'has_archive'       => true,
       'query_var'         => false,
-      'icon_url'          => 'dashicons-person'
+      'menu_icon'          => 'dashicons-groups'
     );
     register_post_type( 'team', $args );
   }
@@ -95,7 +95,7 @@
       'show_in_nav_menus' => false,
       'has_archive'       => true,
       'query_var'         => false,
-      'icon_url'          => 'dashicons-data'
+      'menu_icon'          => 'dashicons-calendar-alt'
     );
     register_post_type( 'programming', $args );
   }

@@ -1,0 +1,29 @@
+/* Chapaza fonts */
+@font-face{
+  font-family: 'Chapaza';
+  src: url( '../../lib/fonts/chapaza/Chapaza.ttf' ) format( 'truetype' );
+  font-weight: 400;
+  font-style: normal;
+}
+/* Florentia fonts */
+@font-face{
+  font-family: 'Florentia';
+  src: url( '../../lib/fonts/florentia/Florentia-Regular-trial.ttf' ) format( 'truetype' );
+  font-weight: 400;
+  font-style: normal;
+}
+/* Dressler font */
+@font-face{
+  font-family: 'Dressler';
+  src: url( '../../lib/fonts/dressler-font/Dressler-Regular.otf' ) format( 'opentype' );
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reactin */
+@font-face{
+  font-family: 'Reactin';
+  src: url( '../../lib/fonts/reactin/Reactin.ttf' ) format( 'truetype' );
+  font-weight: 400;
+  font-style: normal;
+}

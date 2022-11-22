@@ -1,16 +1,6 @@
 <header>
   <section class="cpw-sidebar">
-    <div class="cpw-sidebar-text-topo">
-      <div class="cpw-container">
-        <div class="cpw-content">
-          <p><span>Uma experiência gastronômica no Topo</span></p>
-        </div>
-      </div>
-    </div>
     <div class="cpw-container">
-      <div class="cpw-logo cpw-desktop">
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php the_custom_logo(); ?></a>
-      </div>
       <div>
         <nav class="cpw-rede-social">
           <ul>
@@ -24,10 +14,22 @@
                   </li>
                   <?php endwhile;
               endif;
-            ?>
+              ?>
           </ul>
         </nav>
       </div>
+      <div class="cpw-logo cpw-desktop">
+        <?php 
+          if( has_custom_logo() ){
+            the_custom_logo();
+          }else{?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+          <?php }
+        ?>
+      </div>
+      <div class="cpw-searchbox">
+        <?php get_search_form(); ?>
+      </div>  
     </div>
     <div class="cpw-container">
       <nav class="cpw-main-menu">
@@ -45,9 +47,6 @@
       </nav>
       <div class="cpw-mobile">
         <a class="cpw-button-home-mobile" href="<?php echo esc_url( home_url( '/' ) )?>"><i class="fa-solid fa-house"></i></a>
-      </div>
-      <div class="cpw-searchbox">
-        <?php get_search_form(); ?>
       </div>
     </div>
   </section>

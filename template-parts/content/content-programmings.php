@@ -1,15 +1,26 @@
+<div class="cpw-container cpw-padding">
+  <div class="cpw-col">
+    <?php 
+    while( have_posts() ) : the_post();?>
+      <?php the_title('<h1>', '</h1>'); ?>
+      <?php
+      the_content(); 
+    endwhile;?>
+  </div>
+</div>
 <?php
   $args = array( 'post_type' => 'programming', 'posts_per_page' => -1 );
   $list = new WP_Query( $args );
   if( $list->have_posts() ):
     while( $list->have_posts() ): $list->the_post();?>
-      <div class="cpw-container cpw-programmings">
+      <div class="cpw-container cpw-flex-cards cpw-programmings">
         <div class="cpw-flex-columns">
-          <div  class="cpw-background" 
-                style="background-image: url( <?php the_post_thumbnail_url(); ?> )"></div>
-          <div class="cpw-contents">
+          <div  class="cpw-background size__520" 
+                style="background-image: url( <?php the_post_thumbnail_url(); ?> ); height: 520px;"></div>
+          <div class="cpw-contents size__520">
             <h3><?php the_title(); ?></h3>
             <?php the_content(); ?>
+            <br>
             <p><span class="cpw-add-event-date"><?php the_field( 'add_event_date' ); ?></span></p>
           </div>
         </div>

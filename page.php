@@ -1,41 +1,39 @@
 <?php get_header(); ?>
+  <img class="cpw-background-page cpw-header-image" src="<?php header_image() ?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width; ?>" alt="" >
   <div class="cpw-primary">
     <div class="cpw-main">
-      <div class="cpw-container cpw-padding">
-          <div class="cpw-col">
-            <?php 
-            while( have_posts() ) : the_post();?>
-              <h1><?php the_title(); ?></h1>
-              <?php
-              the_content(); 
-            endwhile;?>
-          </div>
-      </div>
       <div class="cpw-background-light">
-        <div class="cpw-container">
-          <div class="cpw-col">
             <?php 
               switch($post->post_name){
                 case 'event' :
+                  get_template_part( 'template-parts/content/content', 'columns2' );
                   echo '<div class="cpw-form">';
                     if( is_active_sidebar( 'reservation-form' ) ) dynamic_sidebar( 'reservation-form' );
                   echo '</div>';
                 break;
                 case 'about' : 
-                  get_template_part( 'template-parts/content/content', 'team' );
+                  get_template_part( 'template-parts/content/content', 'columns2' );
                 break;
                 case 'programmings' :
                   get_template_part( 'template-parts/content/content', 'programmings' );
                 break;
-                case 'location' :         
-                  echo "API GOOGLE MAPS 'key' => 'AIzaSyBiN9yM-I4GVhzKJ8X0atpKY76mwAAzP04 ";  
+                case 'special-conditions' :
+                  get_template_part( 'template-parts/content/content', 'columns2' );
                 break;
-                default: 
-                break;
+                default:?> 
+                  <div class="cpw-container cpw-padding">
+                    <div class="cpw-col">
+                      <?php 
+                      while( have_posts() ) : the_post();?>
+                        <?php the_title( '<h1>', '</h1>' ); ?>
+                        <?php
+                        the_content(); 
+                      endwhile;?>
+                    </div>
+                  </div>
+                <?php break;
               }   
             ?>
-          </div>
-        </div>
       </div>
     </div>
   </div>

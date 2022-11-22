@@ -12,14 +12,6 @@
       </div>
     </div>
   </div>
-  <nav class="cpw-main-menu">
-    <?php wp_nav_menu( 
-      array(
-        'theme_location' => 'wp_cpw_footer_menu',
-        'depth' => 1                
-      )); 
-    ?>
-  </nav>
   <div class="cpw-copyright">
     <div class="cpw-container">
       <div class="cpw-content">

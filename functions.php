@@ -43,11 +43,17 @@
     //   'height'  => 800,
     //   'width'   => 1920
     // );
-    add_theme_support( 'custom-header');
+    $default = array(
+      'width'   => 1920,
+      'height'  => 520
+    );
+    add_theme_support( 'custom-header', $default );
     add_theme_support( 'post-thumbnails' );
+    //set image
+    add_image_size( 'size__520', 520, 520, true );
     add_theme_support( 'custom-logo', array(
-      'width'   => 200,
-      'height'  => 110,
+      'width'   => 280,
+      'height'  => 160,
       'flex-height' => true,
       'flex-width'  => true
     ));

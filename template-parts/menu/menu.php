@@ -10,7 +10,7 @@
         <?php if( has_post_thumbnail () ){ the_post_thumbnail( 'full' ); } ?>
         <h1><?php the_title();?></h1>
       </header>          
-      <div class="cpw-content">
+      <div class="cpw-contents">
         <?php the_content(); ?>
       </div>
     </section>
