@@ -69,14 +69,8 @@
             <div class="cpw-container">
               <h2><?php esc_html_e( the_field( 'heading' ) ); ?></h2>
               <p><?php esc_html_e( the_field( 'paragraph' ) ); ?></p>
-              <div class="cpw-gallery">
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery01.jpg" alt=""></a></figure>
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery02.jpg" alt=""></a></figure>
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery03.jpg" alt=""></a></figure>
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery04.jpg" alt=""></a></figure>
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery05.jpg" alt=""></a></figure>
-                <figure class="cpw-gallery__item"><a aria-label="Image Gallery" class="cpw-gallery-link__item" href="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg"><img class="cpw-gallery__item-img" src="<?php echo get_template_directory_uri('')?>/assets/images/delete/gallery06.jpg" alt=""></a></figure>
-              </div>
+              <div class="cpw-gallery"><?php echo do_shortcode( '[insta-gallery id="1"]' ); ?></div>
+              <a href="https://instagram.com/" target="_blank" rel="nofollow" class="cpw-button"><?php echo esc_html_e( 'View on instagram', 'wp-cpw' ); ?></a>
             </div>
           </section>
           <!-- end gallery -->
