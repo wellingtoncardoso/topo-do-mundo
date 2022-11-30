@@ -449,3 +449,19 @@ footer .cpw-main-menu .menu-footer-menu-container #menu-footer-menu .menu-item a
   color: var(--global--color-secondary);
   background-color: transparent;
 }
+
+/* not found - 404 */
+.error-404{
+  padding: 2rem  0;
+  text-align: center;
+}
+.error-404.not-found header.page-header{
+  position: inherit !important;
+  background: transparent !important;
+}
+.error-404.not-found .cpw-contents .searchform input{
+  margin: 1.4rem 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}

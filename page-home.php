@@ -41,7 +41,7 @@
                       endif;
                       ?> 
                       <br>
-                      <a href="#" class="cpw-button"><?php _e('View more','wp-cpw' ); ?></a>
+                      <a href="http://localhost/modelo-padrao-4dimensoes/topo-do-mundo/topo-do-mundo/" class="cpw-button"><?php _e('View more','wp-cpw' ); ?></a>
                     </div>
                     <div class="cpw-information cpw-background"
                         style="background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url( '<?php the_field( 'background_image_information', 'option' ); ?>' )">
@@ -56,7 +56,7 @@
                         <hr>
                         <p><i class="fa-solid fa-location-dot"></i> <span> <?php esc_html_e( the_field( 'text_address', 'option' ) ); ?> </span></p>
                         <hr><br>
-                        <a href="#" class="cpw-button"><?php esc_html_e( 'Request your reservation' , 'wp-cpw'); ?></a>
+                        <a href="http://localhost/modelo-padrao-4dimensoes/topo-do-mundo/faca-sua-reserva/" class="cpw-button"><?php esc_html_e( 'Request your reservation' , 'wp-cpw'); ?></a>
                       </div>
                     </div>
                   </div>
@@ -67,10 +67,14 @@
           <!-- end about home -->
           <section id="cpw-gallery" class="cpw-padding">
             <div class="cpw-container">
-              <h2><?php esc_html_e( the_field( 'heading' ) ); ?></h2>
-              <p><?php esc_html_e( the_field( 'paragraph' ) ); ?></p>
-              <div class="cpw-gallery"><?php echo do_shortcode( '[insta-gallery id="1"]' ); ?></div>
-              <a href="https://instagram.com/" target="_blank" rel="nofollow" class="cpw-button"><?php echo esc_html_e( 'View on instagram', 'wp-cpw' ); ?></a>
+              <div class="cpw-content">
+                <div class="cpw-col">
+                  <h2><?php esc_html_e( the_field( 'heading' ) ); ?></h2>
+                  <p><?php esc_html_e( the_field( 'paragraph' ) ); ?></p>
+                  <?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>
+                  <div><a href="https://www.instagram.com/restaurantetopodomundo/" target="_blank" rel="nofollow" class="cpw-button"><?php esc_html_e( 'View on Intagram', 'wp-cpw' ); ?></a></div>    
+                </div>
+              </div>
             </div>
           </section>
           <!-- end gallery -->

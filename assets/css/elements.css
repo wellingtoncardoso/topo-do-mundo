@@ -12,6 +12,10 @@
   height: 25vh;
   object-fit: cover;
 }
+.cpw-background-parallax{
+  background-attachment: fixed;
+  max-height: 580px !important;
+}
 .cpw-background{
   height: 100vh;
 }
