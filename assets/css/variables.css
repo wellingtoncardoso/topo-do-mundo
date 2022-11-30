@@ -38,6 +38,13 @@
 	--global--font-size-page-title: var(--global--font-size-xxl);
 	--global--letter-spacing: normal;
 
+  /* weight */
+  --global--font-700: 700;
+  --global--font-600: 600;
+  --global--font-400: 400;
+  --global--font-200: 200;
+  --global--font-100: 100;
+
   /* buttons */
   --global--button-font-size: var(--global--font-size-sm);
   --global--button-color: var(--global--color-secondary);

@@ -1,0 +1,311 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Blank WordPress Pot v1.0.0\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"POT-Creation-Date: 2022-11-30 10:43-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;"
+"_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Poedit 3.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Ops! That page can&rsquo;t be found."
+msgstr "Ops! Essa página não pode ser encontrada."
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Parece que nada foi encontrado neste local. Talvez tente uma pesquisa?"
+
+#: archive-menu.php:13
+msgid "E se surpreenda com essa infinidade de sabores."
+msgstr "E se surpreende com essa emoção de sabores."
+
+#: archive-menu.php:14 template-parts/footer/footer-reservation-action.php:8
+msgid "Make your reservation"
+msgstr "Faça sua reserva"
+
+#: functions.php:37
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: functions.php:38
+msgid "Footer Menu"
+msgstr "Menu rodapé"
+
+#: functions.php:77 functions.php:78
+msgid "Restaurant"
+msgstr "Restaurante"
+
+#: inc/custom-posts.php:8 inc/custom-posts.php:9
+msgid "Menu"
+msgstr "Cardápio"
+
+#: inc/custom-posts.php:10 inc/custom-posts.php:11
+msgid "Add New Menu"
+msgstr "Adicionar Novo Cardápio"
+
+#: inc/custom-posts.php:12
+msgid "Edit Menu"
+msgstr "Editar Cardápio"
+
+#: inc/custom-posts.php:13
+msgid "New Menu"
+msgstr "Novo Cardápio"
+
+#: inc/custom-posts.php:14
+msgid "All Menus"
+msgstr "Todo Cardápio"
+
+#: inc/custom-posts.php:15
+msgid "View Menu"
+msgstr "Ver Cardápio"
+
+#: inc/custom-posts.php:16
+msgid "Search Menu"
+msgstr "Pesquisar Cardápio"
+
+#: inc/custom-posts.php:17
+msgid "Menu Image"
+msgstr "Imagem cardápio"
+
+#: inc/custom-posts.php:18 inc/custom-posts.php:52 inc/custom-posts.php:85
+msgid "Add Image"
+msgstr "Adicionar imagem"
+
+#: inc/custom-posts.php:22
+msgid "Keep our menus and menu data"
+msgstr "Manter nossos cardápios e dados do cardápio"
+
+#: inc/custom-posts.php:42
+msgid "Teams"
+msgstr "Equipes"
+
+#: inc/custom-posts.php:43
+msgid "Team"
+msgstr "Equipe"
+
+#: inc/custom-posts.php:44 inc/custom-posts.php:45
+msgid "Add New Member"
+msgstr "Adicionar Novo Membro"
+
+#: inc/custom-posts.php:46
+msgid "Edit Member"
+msgstr "Editar Membro"
+
+#: inc/custom-posts.php:47
+msgid "New Member"
+msgstr "Novo Membro"
+
+#: inc/custom-posts.php:48
+msgid "All Member"
+msgstr "Todos os Membros"
+
+#: inc/custom-posts.php:49
+msgid "View Member"
+msgstr "Ver Membro"
+
+#: inc/custom-posts.php:50
+msgid "Search Member"
+msgstr "Pesquisar Membro"
+
+#: inc/custom-posts.php:51
+msgid "Member Image"
+msgstr "Imagem do Membro"
+
+#: inc/custom-posts.php:75
+msgid "Programmings"
+msgstr "Programações"
+
+#: inc/custom-posts.php:76
+msgid "Programming"
+msgstr "Programação"
+
+#: inc/custom-posts.php:77 inc/custom-posts.php:78
+msgid "Add New Programming"
+msgstr "Adicionar Nova Programação"
+
+#: inc/custom-posts.php:79
+msgid "Edit Programming"
+msgstr "Editar Programação"
+
+#: inc/custom-posts.php:80
+msgid "New Programming"
+msgstr "Nova Ptogramação"
+
+#: inc/custom-posts.php:81
+msgid "All Programming"
+msgstr "Todas as Programações"
+
+#: inc/custom-posts.php:82
+msgid "View Programming"
+msgstr "Ver Programação"
+
+#: inc/custom-posts.php:83
+msgid "Search Programming"
+msgstr "Pesquisar Programação"
+
+#: inc/custom-posts.php:84
+msgid "Programming Image"
+msgstr "Imagem Programação"
+
+#: inc/custom-posts.php:89
+msgid "Keep our event schedule data"
+msgstr "Manter nossos eventos e dados do evento"
+
+#: inc/customizer.php:7 inc/customizer.php:8
+msgid "Copyright Settings"
+msgstr "Configuração do Copyright"
+
+#: inc/customizer.php:15
+msgid "Copyright X - All Rights Reserved"
+msgstr "Copyright X - Todos os Direitos Reservados"
+
+#: inc/customizer.php:22
+msgid "Copyright Information"
+msgstr "Informação do Copyright"
+
+#: inc/customizer.php:23
+msgid "Please, type your copyright here."
+msgstr "Por favor, digite seus direitos autorais aqui."
+
+#: inc/customizer.php:33
+msgid "Hero Section"
+msgstr "Banner Section"
+
+#: inc/customizer.php:41
+msgid "100"
+msgstr ""
+
+#: inc/customizer.php:48
+msgid "Hero min-height"
+msgstr "Banner altura mínima"
+
+#: inc/customizer.php:49
+msgid "Please, type your hero min-height ( < 50 )."
+msgstr "Por favor, digite a altura mínima do seu height ( < 50 )."
+
+#: inc/customizer.php:66
+msgid "Hero Image"
+msgstr "Imagem Banner"
+
+#: inc/widgets.php:7
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/widgets.php:9
+msgid "this is the BLog Sidebar. You can add your widgets here."
+msgstr "está é a barra lateral do blog. Você pode adicionar seus widgets aqui."
+
+#: inc/widgets.php:18
+msgid "Reservation Form"
+msgstr "Formulário de Reservas"
+
+#: inc/widgets.php:20
+msgid "Reservation Form Area"
+msgstr "Área do Formulário de Reservas"
+
+#: inc/widgets.php:29
+msgid "Column 1 Footer"
+msgstr "Coluna 1 Rodapé"
+
+#: inc/widgets.php:31
+msgid "Footer First Column"
+msgstr "Primeira Coluna Rodapé"
+
+#: inc/widgets.php:40
+msgid "Column 2 Footer"
+msgstr "Coluna 2 Rodapé"
+
+#: inc/widgets.php:42
+msgid "Footer Second Column"
+msgstr "Segunda Coluna Rodapé"
+
+#: inc/widgets.php:51
+msgid "Column 3 Footer"
+msgstr "Coluna 3 Rodapé"
+
+#: inc/widgets.php:53
+msgid "Footer Third Column"
+msgstr "Terceira Coluna Rodapé"
+
+#: index.php:6
+msgid "List Of Articles"
+msgstr "Lista dos Arquivos"
+
+#: page-home.php:31
+msgid "Restaurante Topo do Mundo"
+msgstr ""
+
+#: page-home.php:39 page.php:26 template-parts/content/content-search.php:15
+#: template-parts/content/content.php:9 template-parts/menu/menu-loop.php:24
+#: template-parts/menu/menu-loop.php:43 template-parts/menu/menu-loop.php:62
+#: template-parts/menu/menu-loop.php:81
+msgid "Nothing yet to be displayed!"
+msgstr "Nada ainda a ser exibido!"
+
+#: page-home.php:44 template-parts/menu/menu-card.php:5
+msgid "View more"
+msgstr "Veja mais"
+
+#: page-home.php:59
+msgid "Request your reservation"
+msgstr "Solicite sua reserva"
+
+#: page-home.php:75
+msgid "View on Intagram"
+msgstr "Veja no instagram"
+
+#: single.php:17
+msgid "Categories"
+msgstr "Categorias"
+
+#: single.php:18
+msgid "Tags"
+msgstr "Tags"
+
+#: template-parts/content/content-gallery-event.php:9
+msgid "Image Gallery"
+msgstr "Imagem da Galeria"
+
+#: template-parts/footer/footer-reservation-action.php:7
+msgid "Venha viver momentos únicos no Topo!"
+msgstr ""
+
+#: template-parts/footer/footer.php:22
+msgid "http://4dimensoes.com/"
+msgstr ""
+
+#: template-parts/footer/footer.php:22
+msgid "Developed by - 4 Dimensões"
+msgstr "Desenvolvido por - 4 Dimensões"
+
+#: template-parts/menu/menu-loop.php:4 template-parts/menu/menu-loop.php:14
+msgid "Food"
+msgstr "Comida"
+
+#: template-parts/menu/menu-loop.php:5 template-parts/menu/menu-loop.php:33
+msgid "Wine"
+msgstr "Vinho"
+
+#: template-parts/menu/menu-loop.php:6 template-parts/menu/menu-loop.php:52
+msgid "Beer"
+msgstr "Cerveja"
+
+#: template-parts/menu/menu-loop.php:7 template-parts/menu/menu-loop.php:71
+msgid "Dessert"
+msgstr "Sobremesa"

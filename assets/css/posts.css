@@ -20,6 +20,10 @@ p{
   line-height: 28px;
   margin-bottom: .8rem;
 }
+strong, 
+b{
+  font-weight: var(--global--font-700);
+}
 
 /* backgrounds */
 .cpw-background-primary{
@@ -631,9 +635,11 @@ p{
   margin-bottom: 0;
 }
 .cpw-resertavion__action .cpw-button{
+  background-color: var(--global--color-primary);
   border: 1px solid var(--global--color-primary);
 }
 .cpw-resertavion__action .cpw-button:hover{
+  background-color: transparent !important;
   text-decoration: none;
   background-color: var(--global--color-primary);
 

@@ -5,7 +5,7 @@
         <div class="cpw-col">
           <div class="cpw-flex-columns"> 
             <div><h2 class="cpw-copy-white"><?php esc_html_e( 'Venha viver momentos únicos no Topo!', 'wp-cpw' ); ?></h2></div>
-            <div><a href="<?php esc_url( home_url( '/' ) ) ?>faca-sua-reserva" class="cpw-button cpw-copy-white "><?php esc_html_e( 'Reservation','wp-cpw' ); ?></a></div>
+            <div><a href="<?php esc_url( home_url( '/' ) ) ?>faca-sua-reserva" class="cpw-button cpw-copy-white "><?php esc_html_e( 'Make your reservation','wp-cpw' ); ?></a></div>
           </div>
         </div>
       </div>

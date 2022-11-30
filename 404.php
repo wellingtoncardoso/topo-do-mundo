@@ -21,7 +21,7 @@
               <div class="cpw-contents">
                 <p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search?', 'wp-cpw' ); ?></p>
                 <?php get_search_form(); ?>
-                <a href="<?php esc_url( home_url( '/' ) ); ?>" class="cpw-button"><i class="fa "></i><?php bloginfo( 'name' ); ?></a>
+                <a href="<?php esc_attr_e( esc_url( home_url( '/' ) ) ); ?>" class="cpw-button"><?php bloginfo( 'name' ); ?></a>
               </div>
             </section>
           </div>

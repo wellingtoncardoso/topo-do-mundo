@@ -92,6 +92,10 @@
   padding-top: var(--global--padding);
   padding-bottom: var(--global--padding);
 }
+.cpw-padding-block{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 @media(max-width: 991px){
   .cpw-padding{
     padding: 7rem 15px 2rem;

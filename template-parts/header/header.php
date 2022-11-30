@@ -23,7 +23,7 @@
           if( has_custom_logo() ){
             the_custom_logo();
           }else{?>
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+            <a href="<?php esc_attr_e( esc_url( home_url( '/' ) ) ); ?>"><?php bloginfo( 'name' ); ?></a>
           <?php }
         ?>
       </div>
@@ -46,8 +46,9 @@
           ?>
       </nav>
       <div class="cpw-mobile">
-        <a class="cpw-button-home-mobile" href="<?php echo esc_url( home_url( '/' ) )?>"><i class="fa-solid fa-house"></i></a>
+        <a class="cpw-button-home-mobile" href="<?php esc_attr_e( esc_url( home_url( '/' ) ) ); ?>"><i class="fa-solid fa-house"></i></a>
       </div>
     </div>
   </section>
 </header>
+<div class="cpw-translate"><?php  get_template_part( 'template-parts/header/header', 'translate' ); ?></div>

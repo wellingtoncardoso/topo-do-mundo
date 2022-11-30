@@ -12,7 +12,7 @@ msgstr ""
 "<translations@example."
 "com>\n"
 "POT-Creation-Date: "
-"2022-11-29 22:03-0300\n"
+"2022-11-30 10:43-0300\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Your "
 "Name <you@example.com>\n"
@@ -72,7 +72,8 @@ msgstr ""
 
 #: archive-menu.php:14
 #: template-parts/footer/footer-reservation-action.php:8
-msgid "Reservation"
+msgid ""
+"Make your reservation"
 msgstr ""
 
 #: functions.php:37

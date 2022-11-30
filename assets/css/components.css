@@ -76,7 +76,7 @@ header .cpw-sidebar .cpw-container .cpw-logo{
 }
 @media(max-width: 1024px){
   header .cpw-sidebar .cpw-container .cpw-logo{
-    max-width: 450px;
+    max-width: 400px;
   }
 }
 header .cpw-sidebar .cpw-container .cpw-logo img{
@@ -323,6 +323,29 @@ header .cpw-sidebar .cpw-container .cpw-searchbox span i{
   header .cpw-button-home-mobile i:hover{
     color: var(--global--color-secondary);
   }
+}
+.cpw-translate{
+  position: fixed;
+  right: 0;
+  top: calc( 100% - 67vh );
+  z-index: 333333;
+}
+
+.cpw-translate a.glink{
+  display: block;
+  color: var(--global--color-details);
+  padding: .4rem;
+  transition: .2s ease-in-out;
+  background-color: var(--global--color-primary);
+}
+.cpw-translate a.glink:hover{
+  cursor: pointer;
+  color: var(--global--color-details);
+  background-color: var(--global--color-secondary);
+}
+.cpw-translate a.glink:hover::after{
+  position: relative;
+  content: "";
 }
 
 /* footer */
