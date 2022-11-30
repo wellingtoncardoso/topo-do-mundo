@@ -278,7 +278,7 @@ b{
 }
 @media(max-width: 991px){
   .cpw-gallery .cpw-gallery__item img{
-    height: 280px;
+    height: 180px;
   }
 }
 .cpw-gallery .cpw-gallery__item img:hover{
@@ -516,6 +516,12 @@ b{
   justify-content: center;
   padding: 1.4rem 0;
 }
+@media(max-width: 414px){
+  .cpw-nav-menu{
+    justify-content: space-between;
+    overflow-x: auto;
+  }
+}
 .cpw-nav-menu .cpw-nav-menu__item{
   padding: .5rem 1rem;
 }
@@ -638,6 +644,11 @@ b{
   background-color: var(--global--color-primary);
   border: 1px solid var(--global--color-primary);
 }
+@media(max-width: 575px){
+  .cpw-resertavion__action .cpw-button{
+    font-size: .8rem !important;
+  }
+}
 .cpw-resertavion__action .cpw-button:hover{
   background-color: transparent !important;
   text-decoration: none;
@@ -693,7 +704,7 @@ b{
 }
 @media(max-width: 575px){
   .cpw-programmings .cpw-contents p .cpw-add-event-date{
-    font-size: .875rem;
+    font-size: .8rem;
     padding: .625rem;
   }
 }

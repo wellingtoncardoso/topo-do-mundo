@@ -94,7 +94,7 @@
 }
 
 .cpw-details-hero .cpw-info-hero h2{
-  font-weight: 200;
+  font-weight: 200 !important;
   font-family: var(--global--font-secondary);
   font-size: var(--global--font-size-xxxl);
   margin-bottom: var(--global--margin-bottom);

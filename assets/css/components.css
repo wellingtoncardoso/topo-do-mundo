@@ -488,3 +488,8 @@ footer .cpw-main-menu .menu-footer-menu-container #menu-footer-menu .menu-item a
   border-right: none;
   border-left: none;
 }
+@media(max-width: 991px){
+  .error-404.not-found .cpw-contents{
+    margin-top: 7rem;
+  }
+}

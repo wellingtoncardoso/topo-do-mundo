@@ -160,6 +160,15 @@
   }
 }
 
+@media(max-width: 767px){ 
+  .wp-block-columns.cpw-flex-blocks{
+    flex-direction: column-reverse !important;
+  }
+  .wp-block-spacer{
+    height: 0 !important;
+  }
+}
+
 /* behaviors */
 .cpw-modal{
   width: 100vw;

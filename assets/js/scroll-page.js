@@ -18,6 +18,7 @@ $(window).scroll( () => {
     }
     $('.cpw-nav-menu').css({"top":"calc( 100% - 70vh )"})
     $('.cpw-nav-menu').css({"display":"block"})
+    $('.cpw-nav-menu').css({"z-index":"44444"})
     $('.cpw-nav-menu .cpw-nav-menu__item').css({"background-color":"#000"})
     $('.cpw-nav-menu .cpw-nav-menu__item a').css({"color":"#FFF"})
     $('.cpw-nav-menu .cpw-nav-menu__item').css({"padding":".4rem"})
