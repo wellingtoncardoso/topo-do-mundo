@@ -6,6 +6,11 @@
   --global--color-secondary: #CB7822;
   --global--color-details: #FFF;
 
+  /* backgrounds */
+  --global--background-primary: #000;
+  --global--background-secondary: #CB7822;
+  --global--background-details: #FFF;
+
   /* margins and paddings */
   --global--margin-top: 64px;
   --global--margin-bottom: 32px;

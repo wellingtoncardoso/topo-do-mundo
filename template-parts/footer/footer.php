@@ -1,3 +1,4 @@
+<?php get_template_part( 'template-parts/footer/footer', 'reservation-action' ); ?>
 <footer class="cpw-site-footer">
   <div class="cpw-container cpw-padding">
     <div class="cpw-content">
@@ -18,7 +19,7 @@
         <div class="cpw-col">
           <div class="cpw-flex-columns">
             <div><p>&copy; <?php echo esc_html( get_theme_mod( 'set_copyright', 'Copyright X - All Rights Reserved' ) ); ?></p></div>
-            <div><p><a href="<?php echo esc_url( __( 'http://4dimensoes.com/', 'wp-cpw' ) ); ?>" target="_blank"><?php echo esc_html_e( 'Developed by - 4 Dimensões', 'wp-cpw' ); ?></a></p></div>
+            <div><p><a href="<?php echo esc_url( _e( 'http://4dimensoes.com/', 'wp-cpw' ) ); ?>" target="_blank"><?php echo esc_html_e( 'Developed by - 4 Dimensões', 'wp-cpw' ); ?></a></p></div>
           </div>
         </div>
       </div>

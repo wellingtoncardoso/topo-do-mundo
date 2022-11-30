@@ -1,13 +1,3 @@
-<div class="cpw-container cpw-padding">
-  <div class="cpw-col">
-    <?php 
-    while( have_posts() ) : the_post();?>
-      <?php the_title('<h1>', '</h1>'); ?>
-      <?php
-      the_content(); 
-    endwhile;?>
-  </div>
-</div>
 <?php
   $args = array( 'post_type' => 'programming', 'posts_per_page' => -1 );
   $list = new WP_Query( $args );
